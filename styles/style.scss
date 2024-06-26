@@ -1,0 +1,417 @@
+// ----- FONTS ----- //
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('/fonts/CaviarDreams.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Caviar Dreams Bold';
+    src: url('/fonts/CaviarDreams_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Caviar Dreams Italic';
+    src: url('/fonts/CaviarDreams_Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Brittany Signature';
+    src: url('/fonts/BrittanySignature.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Blacker Sans';
+    src: url('/fonts/Blacker-Sans-Extrabold-trial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Coco Gothic Bold Italic';
+    src: url('/fonts/CocoGothic-BoldItalic_trial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TT Chocolade';
+    src: url('/fonts/TT\ Chocolates\ Trial\ Medium.otf') format('truetype');
+}
+
+// ----- COLORS ----- //
+
+$pink: #CC7173;
+$pink-dark: #984E52;
+$pink-light: #F7EBE8;
+
+
+// ----- GENERAL STYLE ----- //
+
+* {
+    font-family: 'Caviar Dreams', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+.pink {
+    background-color: $pink;
+}
+
+.txt-pinklight {
+    color: $pink-light;
+}
+
+.txt-pinkdark {
+    color: $pink-dark;
+}
+
+.glow-pinkdark {
+    filter: drop-shadow(5px 5px 5px $pink-dark);
+}
+
+.shadow {
+    filter: drop-shadow(1px 5px 3px rgba(0, 0, 0, 0.5));
+}
+
+.caviar-bold {
+    font-family: 'Caviar Dreams Bold';
+}
+
+.coco-bold-italic {
+    font-family: 'Coco Gothic Bold Italic';
+}
+
+.degrade-txt-pink {
+    color: linear-gradient(90deg, rgba(204,113,115,1) 0%, rgba(247,235,232,1) 50%); 
+}
+
+strong {
+    font-family: 'TT Chocolade';
+    color: #984E52;
+}
+
+nav, footer {
+    * {
+        color: $pink-light;
+    }
+}
+
+
+nav {
+    width: 100%;
+    height: 8vh;
+    background-color: $pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0  50px;
+
+    img {
+        height: 70%;
+    }
+
+    a {
+        font-family: 'Caviar Dreams Bold';
+        font-size: 2vh;
+        text-shadow: 2px 3px 8px rgb(48, 48, 48);
+        
+        &:hover {
+            text-shadow: 0 0 8px rgba(white, 0.8);
+        } 
+    }
+}
+
+footer{
+    background-color: $pink;
+    padding: 15px 20px;
+
+    .foot-top {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+
+        .logo_bot {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-width: 200px;
+                padding: 20px;
+            }
+        }
+
+        .infos {
+
+            text-align: center;
+            width: 30%;
+
+            p, h3, a {
+                margin: 5px;
+            }
+        }
+
+        .follow {
+            text-align: center;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                margin: 0 5px;
+            }
+
+            img {
+                width: 30px;
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .foot-bot {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.active {
+    text-shadow: 0 0 8px rgba(white, 0.8);
+}
+
+.titre-section {
+    margin-top: 5vh;
+    padding: 1vmin 5vw;
+    background: linear-gradient(90deg, rgba(204,113,115,1) 0%, rgba(247,235,232,1) 50%);
+
+    h3 {
+        display: inline;
+        font-size: 3vmin;
+    }
+}
+
+.reverse {
+    text-align: right;
+    background: linear-gradient(-90deg, rgba(204,113,115,1) 0%, rgba(247,235,232,1) 50%);
+}
+
+
+// ----- ACCUEIL STYLE  ----- //
+
+
+
+main {
+
+    .home {
+        height: 89vh;
+        background-image: url("pellenc.png");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+
+        img {
+            height: 50%;
+            filter: drop-shadow(5px 5px 5px $pink-dark);
+        }
+
+        h1 {
+            font-family: 'Caviar Dreams Bold';
+            font-size: 4vh;
+        }
+
+        h2 {
+            font-family: 'Caviar Dreams Italic';
+            font-size: 3vh;
+        }
+    }
+
+    .band {
+        height: 3vh;
+        width: 100%;
+        background-color: $pink;
+    }
+
+    .dix-ans {
+        padding: 10vh 200px;
+        position: relative;
+
+        .texte {
+
+            h2 {
+                font-size: 7vh;
+                margin: 2vh 0;
+                background: linear-gradient(90deg, rgba(204,113,115,1) 0%, rgba(247,235,232,1) 20%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                width: 50vw;
+                color: $pink-dark;
+                font-size: 2.5vh;
+                font-family: 'TT Chocolade';
+                margin: 3vh 20px;
+                text-align: justify;
+            }
+        }
+
+        img {
+            opacity: 50%;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+        
+    }
+
+    .references {
+        width: 100%;
+
+        .map {
+            height: 800px;
+
+        }
+    }
+
+    .cle-en-main {
+        width: 100%;
+
+        ul {
+            height: 50vmin;
+            display: flex;
+            justify-content: space-around;
+            margin: 10vh auto;
+            align-items: center;
+
+            
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                
+
+                .rond {
+                    background-color: $pink-light;
+                    border: 0.3vw solid $pink-dark;
+                    padding: 3vw;
+                    border-radius: 50%;
+                    
+                    img {
+                        width: 8vw;
+                    }
+                }
+
+                h4 {
+                    font-size: 2.5vmin;
+                    margin: 1vh;
+                    color: $pink-dark;
+                }
+
+                :hover {
+                }
+            }
+                
+            li:nth-child(2) {
+                align-self: end;
+            }
+
+            li:nth-child(3) {
+                align-self: start;
+            }
+        }
+    }
+
+    .realisations {
+        height: 800px;
+        background-image: url('/img/logo/ressort\ tapisserie.jpg');
+        background-size: contain;
+        opacity: 50%;
+    }
+    
+}
+
+// CONTACT //
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 5vh 0;
+    
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2, h3, h4 {
+            color: $pink-dark;
+            margin: 2vh 0;
+        }
+
+        h2 {
+            font-size: 4vh;
+            font-family: 'Caviar Dreams Bold';
+        }
+
+        h3 {
+            font-size: 3vh;
+        }
+
+        h4 {
+            font-size: 2vh;
+        }
+
+        img {
+            width: 20vw;
+            padding: 3vmin; 
+        }
+
+    }
+
+    .right {
+        
+        align-content: center;
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            .np{
+                display: inline;
+            } 
+
+        }
+
+        input[type=text], textarea, input[type=email], input[type=tel] {
+            padding: 12px;
+            border: none;
+            background-color: $pink-light;
+            border-radius: 10px;
+            resize: vertical;
+            margin: 2vmin 100px;
+            font-size: 2vh;
+            color: $pink-dark;
+          }
+
+        input[type=submit]{
+            width: 7vw;
+            height: 3vh;
+            margin: auto;
+            background-color: $pink;
+            border-radius: 10px;
+            border: none;
+            color: $pink-light;
+            font-weight: bold;
+            font-size: 2vh;
+        }
+    }
+}
+

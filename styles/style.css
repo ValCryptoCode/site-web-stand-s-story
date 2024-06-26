@@ -1,0 +1,325 @@
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("/fonts/CaviarDreams.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Caviar Dreams Bold";
+  src: url("/fonts/CaviarDreams_Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Caviar Dreams Italic";
+  src: url("/fonts/CaviarDreams_Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Brittany Signature";
+  src: url("/fonts/BrittanySignature.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Blacker Sans";
+  src: url("/fonts/Blacker-Sans-Extrabold-trial.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Coco Gothic Bold Italic";
+  src: url("/fonts/CocoGothic-BoldItalic_trial.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Chocolade";
+  src: url("/fonts/TT Chocolates Trial Medium.otf") format("truetype");
+}
+* {
+  font-family: "Caviar Dreams", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: black;
+}
+
+.pink {
+  background-color: #CC7173;
+}
+
+.txt-pinklight {
+  color: #F7EBE8;
+}
+
+.txt-pinkdark {
+  color: #984E52;
+}
+
+.glow-pinkdark {
+  filter: drop-shadow(5px 5px 5px #984E52);
+}
+
+.shadow {
+  filter: drop-shadow(1px 5px 3px rgba(0, 0, 0, 0.5));
+}
+
+.caviar-bold {
+  font-family: "Caviar Dreams Bold";
+}
+
+.coco-bold-italic {
+  font-family: "Coco Gothic Bold Italic";
+}
+
+.degrade-txt-pink {
+  color: linear-gradient(90deg, rgb(204, 113, 115) 0%, rgb(247, 235, 232) 50%);
+}
+
+strong {
+  font-family: "TT Chocolade";
+  color: #984E52;
+}
+
+nav *, footer * {
+  color: #F7EBE8;
+}
+
+nav {
+  width: 100%;
+  height: 8vh;
+  background-color: #CC7173;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px 0 50px;
+}
+nav img {
+  height: 70%;
+}
+nav a {
+  font-family: "Caviar Dreams Bold";
+  font-size: 2vh;
+  text-shadow: 2px 3px 8px rgb(48, 48, 48);
+}
+nav a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+footer {
+  background-color: #CC7173;
+  padding: 15px 20px;
+}
+footer .foot-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .foot-top .logo_bot {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+footer .foot-top .logo_bot img {
+  max-width: 200px;
+  padding: 20px;
+}
+footer .foot-top .infos {
+  text-align: center;
+  width: 30%;
+}
+footer .foot-top .infos p, footer .foot-top .infos h3, footer .foot-top .infos a {
+  margin: 5px;
+}
+footer .foot-top .follow {
+  text-align: center;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot-top .follow p {
+  margin: 0 5px;
+}
+footer .foot-top .follow img {
+  width: 30px;
+  margin: 0 5px;
+}
+footer .foot-bot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.titre-section {
+  margin-top: 5vh;
+  padding: 1vmin 5vw;
+  background: linear-gradient(90deg, rgb(204, 113, 115) 0%, rgb(247, 235, 232) 50%);
+}
+.titre-section h3 {
+  display: inline;
+  font-size: 3vmin;
+}
+
+.reverse {
+  text-align: right;
+  background: linear-gradient(-90deg, rgb(204, 113, 115) 0%, rgb(247, 235, 232) 50%);
+}
+
+main .home {
+  height: 89vh;
+  background-image: url("pellenc.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main .home img {
+  height: 50%;
+  filter: drop-shadow(5px 5px 5px #984E52);
+}
+main .home h1 {
+  font-family: "Caviar Dreams Bold";
+  font-size: 4vh;
+}
+main .home h2 {
+  font-family: "Caviar Dreams Italic";
+  font-size: 3vh;
+}
+main .band {
+  height: 3vh;
+  width: 100%;
+  background-color: #CC7173;
+}
+main .dix-ans {
+  padding: 10vh 200px;
+  position: relative;
+}
+main .dix-ans .texte h2 {
+  font-size: 7vh;
+  margin: 2vh 0;
+  background: linear-gradient(90deg, rgb(204, 113, 115) 0%, rgb(247, 235, 232) 20%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .dix-ans .texte p {
+  width: 50vw;
+  color: #984E52;
+  font-size: 2.5vh;
+  font-family: "TT Chocolade";
+  margin: 3vh 20px;
+  text-align: justify;
+}
+main .dix-ans img {
+  opacity: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+main .references {
+  width: 100%;
+}
+main .references .map {
+  height: 800px;
+}
+main .cle-en-main {
+  width: 100%;
+}
+main .cle-en-main ul {
+  height: 50vmin;
+  display: flex;
+  justify-content: space-around;
+  margin: 10vh auto;
+  align-items: center;
+}
+main .cle-en-main ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .cle-en-main ul li .rond {
+  background-color: #F7EBE8;
+  border: 0.3vw solid #984E52;
+  padding: 3vw;
+  border-radius: 50%;
+}
+main .cle-en-main ul li .rond img {
+  width: 8vw;
+}
+main .cle-en-main ul li h4 {
+  font-size: 2.5vmin;
+  margin: 1vh;
+  color: #984E52;
+}
+main .cle-en-main ul li:nth-child(2) {
+  align-self: end;
+}
+main .cle-en-main ul li:nth-child(3) {
+  align-self: start;
+}
+main .realisations {
+  height: 800px;
+  background-image: url("/img/logo/ressort tapisserie.jpg");
+  background-size: contain;
+  opacity: 50%;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh 0;
+}
+.contact .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .left h2, .contact .left h3, .contact .left h4 {
+  color: #984E52;
+  margin: 2vh 0;
+}
+.contact .left h2 {
+  font-size: 4vh;
+  font-family: "Caviar Dreams Bold";
+}
+.contact .left h3 {
+  font-size: 3vh;
+}
+.contact .left h4 {
+  font-size: 2vh;
+}
+.contact .left img {
+  width: 20vw;
+  padding: 3vmin;
+}
+.contact .right {
+  align-content: center;
+}
+.contact .right form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .right form .np {
+  display: inline;
+}
+.contact .right input[type=text], .contact .right textarea, .contact .right input[type=email], .contact .right input[type=tel] {
+  padding: 12px;
+  border: none;
+  background-color: #F7EBE8;
+  border-radius: 10px;
+  resize: vertical;
+  margin: 2vmin 100px;
+  font-size: 2vh;
+  color: #984E52;
+}
+.contact .right input[type=submit] {
+  width: 7vw;
+  height: 3vh;
+  margin: auto;
+  background-color: #CC7173;
+  border-radius: 10px;
+  border: none;
+  color: #F7EBE8;
+  font-weight: bold;
+  font-size: 2vh;
+}/*# sourceMappingURL=style.css.map */
