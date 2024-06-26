@@ -339,6 +339,30 @@ main {
     
 }
 
+// NOS REALISATIONS //
+
+.nos-realisations {
+
+    .btn {
+        padding: 5vh 2vw;
+
+        button {
+            border: 2px solid $pink-dark;
+            border-radius: 5px;
+            color: $pink-dark;
+            padding: 1vmin;
+
+            :hover {
+                background-color: red;
+                height: 200px;
+            }
+        }
+
+    }
+
+    
+}
+
 // CONTACT //
 
 .contact {
