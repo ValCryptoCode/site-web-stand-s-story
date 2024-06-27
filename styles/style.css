@@ -34,7 +34,7 @@
   list-style: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  color: black;
+  color: #984E52;
 }
 
 .pink {
@@ -264,6 +264,9 @@ main .realisations {
   opacity: 50%;
 }
 
+.nos-realisations {
+  margin: 0 0 10vh 0;
+}
 .nos-realisations .btn {
   padding: 5vh 2vw;
 }
@@ -271,11 +274,37 @@ main .realisations {
   border: 2px solid #984E52;
   border-radius: 5px;
   color: #984E52;
+  background-color: white;
   padding: 1vmin;
 }
-.nos-realisations .btn button :hover {
-  background-color: red;
-  height: 200px;
+.nos-realisations .btn button:hover {
+  background-color: #F7EBE8;
+  transition: 0.2s;
+}
+.nos-realisations .btn button:active {
+  background-color: #984E52;
+  color: #F7EBE8;
+}
+.nos-realisations .btn .selected {
+  background-color: #984E52;
+  color: #F7EBE8;
+}
+.nos-realisations .gallerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nos-realisations .gallerie li {
+  margin-top: 5vh;
+}
+.nos-realisations .gallerie li h3 {
+  margin: 1vh 0;
+  font-weight: bold;
+  font-size: 3vh;
+}
+.nos-realisations .gallerie li img {
+  max-width: 600px;
+  border-radius: 20px;
 }
 
 .contact {

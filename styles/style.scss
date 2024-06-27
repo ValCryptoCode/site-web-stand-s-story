@@ -53,7 +53,7 @@ $pink-light: #F7EBE8;
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    color: black;
+    color: $pink-dark;
 }
 
 .pink {
@@ -315,9 +315,6 @@ main {
                     margin: 1vh;
                     color: $pink-dark;
                 }
-
-                :hover {
-                }
             }
                 
             li:nth-child(2) {
@@ -342,6 +339,7 @@ main {
 // NOS REALISATIONS //
 
 .nos-realisations {
+    margin: 0 0 10vh 0;
 
     .btn {
         padding: 5vh 2vw;
@@ -350,14 +348,46 @@ main {
             border: 2px solid $pink-dark;
             border-radius: 5px;
             color: $pink-dark;
+            background-color: white;
             padding: 1vmin;
 
-            :hover {
-                background-color: red;
-                height: 200px;
+            &:hover {
+                background-color: $pink-light;
+                transition: 0.2s;
+            }
+
+            &:active {
+                background-color: $pink-dark;
+                color: $pink-light;
             }
         }
 
+        .selected {
+            background-color: $pink-dark;
+            color: $pink-light;
+        }
+    }
+
+    .gallerie {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        li {
+            margin-top: 5vh;
+
+            h3 {
+                margin: 1vh 0;
+                font-weight: bold;
+                font-size: 3vh;
+            }
+
+
+            img{
+                max-width: 600px;
+                border-radius: 20px;
+            }
+        }
     }
 
     
