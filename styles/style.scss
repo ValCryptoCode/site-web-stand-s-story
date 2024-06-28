@@ -285,11 +285,12 @@ main {
         width: 100%;
 
         ul {
-            height: 50vmin;
+            height: 60vmin;
             display: flex;
             justify-content: space-around;
             margin: 10vh auto;
             align-items: center;
+            position: relative;
 
             
             li {
@@ -305,11 +306,14 @@ main {
                 &:hover .svg {
                     fill: $pink-light;
                     transition: 0.2s ease-in-out;
+                    width: 10vw;
+                    height: 10vw;
                 }
 
                 &:hover .titre-anime {
                     filter: drop-shadow(1px 3px 5px rgba($pink-dark, 0.6));
-                    transition: 0.5s ease-in-out;
+                    font-size: 3vmin;
+                    transition: 0.2s ease-in-out;
                 }
 
                 .rond {
@@ -317,7 +321,7 @@ main {
                     border: 0.3vw solid $pink-dark;
                     padding: 3vw;
                     border-radius: 50%;
-                    transition: 0.4s ease-in-out;
+                    transition: 0.2s ease-in-out;
                     
                     img {
                         width: 8vw;
@@ -328,11 +332,6 @@ main {
                         height: 8vw;
                         fill: $pink-dark;
                         transition: 0.2s ease-in-out;
-
-                        li:hover svg {
-                            fill: $pink-light;
-                            transition: 0.2s ease-in-out;
-                        }
                         
                     }
                 }
@@ -353,6 +352,20 @@ main {
                 align-self: start;
             }
         }
+
+        .ma-ligne {
+            stroke: $pink-dark; /* Couleur de la ligne */
+            stroke-width: 1vw; /* Épaisseur de la ligne */
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        #svg-connect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;/* SVG sera sous les cercles avec un z-index négatif */
+          }
     }
 
     .realisations {

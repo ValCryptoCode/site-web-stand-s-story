@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Caviar Dreams";
   src: url("/fonts/CaviarDreams.ttf") format("truetype");
@@ -226,11 +227,12 @@ main .cle-en-main {
   width: 100%;
 }
 main .cle-en-main ul {
-  height: 50vmin;
+  height: 60vmin;
   display: flex;
   justify-content: space-around;
   margin: 10vh auto;
   align-items: center;
+  position: relative;
 }
 main .cle-en-main ul li {
   display: flex;
@@ -244,17 +246,20 @@ main .cle-en-main ul li:hover .rond {
 main .cle-en-main ul li:hover .svg {
   fill: #F7EBE8;
   transition: 0.2s ease-in-out;
+  width: 10vw;
+  height: 10vw;
 }
 main .cle-en-main ul li:hover .titre-anime {
   filter: drop-shadow(1px 3px 5px rgba(152, 78, 82, 0.6));
-  transition: 0.5s ease-in-out;
+  font-size: 3vmin;
+  transition: 0.2s ease-in-out;
 }
 main .cle-en-main ul li .rond {
   background-color: #F7EBE8;
   border: 0.3vw solid #984E52;
   padding: 3vw;
   border-radius: 50%;
-  transition: 0.4s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 main .cle-en-main ul li .rond img {
   width: 8vw;
@@ -263,10 +268,6 @@ main .cle-en-main ul li .rond svg {
   width: 8vw;
   height: 8vw;
   fill: #984E52;
-  transition: 0.2s ease-in-out;
-}
-main .cle-en-main ul li .rond svg li:hover svg {
-  fill: #F7EBE8;
   transition: 0.2s ease-in-out;
 }
 main .cle-en-main ul li h4 {
@@ -280,6 +281,18 @@ main .cle-en-main ul li:nth-child(2) {
 }
 main .cle-en-main ul li:nth-child(3) {
   align-self: start;
+}
+main .cle-en-main .ma-ligne {
+  stroke: #984E52; /* Couleur de la ligne */
+  stroke-width: 1vw; /* Épaisseur de la ligne */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+main .cle-en-main #svg-connect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* SVG sera sous les cercles avec un z-index négatif */
 }
 main .realisations {
   height: 800px;
