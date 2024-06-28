@@ -296,17 +296,42 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                
-                
+
+                &:hover .rond{
+                    background-color: $pink-dark;
+                }
+
+                &:hover .svg {
+                    fill: $pink-light;
+                    transition: 0.2s ease-in-out;
+                }
+
+                &:hover .titre-anime {  
+                    font-size: 130%;
+                    transition: 0.5s ease-in-out;
+                }
 
                 .rond {
                     background-color: $pink-light;
                     border: 0.3vw solid $pink-dark;
                     padding: 3vw;
                     border-radius: 50%;
+                    transition: 0.4s ease-in-out;
                     
                     img {
                         width: 8vw;
+                    }
+
+                    svg {
+                        width: 8vw;
+                        fill: $pink-dark;
+                        transition: 0.2s ease-in-out;
+
+                        li:hover svg {
+                            fill: $pink-light;
+                            transition: 0.2s ease-in-out;
+                        }
+                        
                     }
                 }
 
@@ -314,6 +339,7 @@ main {
                     font-size: 2.5vmin;
                     margin: 1vh;
                     color: $pink-dark;
+                    transition: 0.2s ease-in-out;
                 }
             }
                 

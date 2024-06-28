@@ -237,19 +237,41 @@ main .cle-en-main ul li {
   flex-direction: column;
   align-items: center;
 }
+main .cle-en-main ul li:hover .rond {
+  background-color: #984E52;
+}
+main .cle-en-main ul li:hover .svg {
+  fill: #F7EBE8;
+  transition: 0.2s ease-in-out;
+}
+main .cle-en-main ul li:hover .titre-anime {
+  font-size: 130%;
+  transition: 0.5s ease-in-out;
+}
 main .cle-en-main ul li .rond {
   background-color: #F7EBE8;
   border: 0.3vw solid #984E52;
   padding: 3vw;
   border-radius: 50%;
+  transition: 0.4s ease-in-out;
 }
 main .cle-en-main ul li .rond img {
   width: 8vw;
+}
+main .cle-en-main ul li .rond svg {
+  width: 8vw;
+  fill: #984E52;
+  transition: 0.2s ease-in-out;
+}
+main .cle-en-main ul li .rond svg li:hover svg {
+  fill: #F7EBE8;
+  transition: 0.2s ease-in-out;
 }
 main .cle-en-main ul li h4 {
   font-size: 2.5vmin;
   margin: 1vh;
   color: #984E52;
+  transition: 0.2s ease-in-out;
 }
 main .cle-en-main ul li:nth-child(2) {
   align-self: end;
