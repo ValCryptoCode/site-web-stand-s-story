@@ -239,13 +239,14 @@ main .cle-en-main ul li {
 }
 main .cle-en-main ul li:hover .rond {
   background-color: #984E52;
+  cursor: pointer;
 }
 main .cle-en-main ul li:hover .svg {
   fill: #F7EBE8;
   transition: 0.2s ease-in-out;
 }
 main .cle-en-main ul li:hover .titre-anime {
-  font-size: 130%;
+  filter: drop-shadow(1px 3px 5px rgba(152, 78, 82, 0.6));
   transition: 0.5s ease-in-out;
 }
 main .cle-en-main ul li .rond {
@@ -260,6 +261,7 @@ main .cle-en-main ul li .rond img {
 }
 main .cle-en-main ul li .rond svg {
   width: 8vw;
+  height: 8vw;
   fill: #984E52;
   transition: 0.2s ease-in-out;
 }

@@ -299,6 +299,7 @@ main {
 
                 &:hover .rond{
                     background-color: $pink-dark;
+                    cursor: pointer;
                 }
 
                 &:hover .svg {
@@ -306,8 +307,8 @@ main {
                     transition: 0.2s ease-in-out;
                 }
 
-                &:hover .titre-anime {  
-                    font-size: 130%;
+                &:hover .titre-anime {
+                    filter: drop-shadow(1px 3px 5px rgba($pink-dark, 0.6));
                     transition: 0.5s ease-in-out;
                 }
 
@@ -324,6 +325,7 @@ main {
 
                     svg {
                         width: 8vw;
+                        height: 8vw;
                         fill: $pink-dark;
                         transition: 0.2s ease-in-out;
 
