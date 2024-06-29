@@ -95,9 +95,11 @@ nav a {
   font-family: "Caviar Dreams Bold";
   font-size: 2vh;
   text-shadow: 2px 3px 8px rgb(48, 48, 48);
+  transition: 0.2s ease-in-out;
 }
 nav a:hover {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  transition: 0.2s ease-in-out;
 }
 
 footer {
@@ -177,7 +179,7 @@ main .home img {
   filter: drop-shadow(5px 5px 5px #984E52);
 }
 main .home h1 {
-  font-family: "Caviar Dreams Bold";
+  font-family: "Blacker Sans";
   font-size: 4vh;
 }
 main .home h2 {
@@ -190,8 +192,10 @@ main .band {
   background-color: #CC7173;
 }
 main .dix-ans {
-  padding: 10vh 200px;
+  padding: 10vh;
   position: relative;
+  max-width: 1800px;
+  margin: auto;
 }
 main .dix-ans .texte h2 {
   font-size: 7vh;
@@ -268,6 +272,7 @@ main .cle-en-main ul li .rond svg {
   width: 8vw;
   height: 8vw;
   fill: #984E52;
+  filter: drop-shadow(5px 5px 3px rgba(152, 78, 82, 0.4));
   transition: 0.2s ease-in-out;
 }
 main .cle-en-main ul li h4 {
@@ -295,51 +300,79 @@ main .cle-en-main #svg-connect {
   z-index: -1; /* SVG sera sous les cercles avec un z-index négatif */
 }
 main .realisations {
-  height: 800px;
   background-image: url("/img/logo/ressort tapisserie.jpg");
   background-size: contain;
-  opacity: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 0;
+}
+main .realisations button {
+  width: 50px;
+  height: 50px;
+}
+main .realisations a {
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+}
+main .realisations a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .realisations a .legende {
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
+}
+main .realisations a .legende h3, main .realisations a .legende p {
+  color: #F7EBE8;
+  text-align: center;
+  filter: drop-shadow(0 0 10px #f7ebe8);
 }
 
-.nos-realisations {
+.page-nos-realisations {
   margin: 0 0 10vh 0;
 }
-.nos-realisations .btn {
+.page-nos-realisations .btn {
   padding: 5vh 2vw;
 }
-.nos-realisations .btn button {
+.page-nos-realisations .btn button {
   border: 2px solid #984E52;
   border-radius: 5px;
   color: #984E52;
   background-color: white;
   padding: 1vmin;
 }
-.nos-realisations .btn button:hover {
+.page-nos-realisations .btn button:hover {
   background-color: #F7EBE8;
   transition: 0.2s;
 }
-.nos-realisations .btn button:active {
+.page-nos-realisations .btn button:active {
   background-color: #984E52;
   color: #F7EBE8;
 }
-.nos-realisations .btn .selected {
+.page-nos-realisations .btn .selected {
   background-color: #984E52;
   color: #F7EBE8;
 }
-.nos-realisations .gallerie {
+.page-nos-realisations .gallerie {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.nos-realisations .gallerie li {
+.page-nos-realisations .gallerie li {
   margin-top: 5vh;
 }
-.nos-realisations .gallerie li h3 {
+.page-nos-realisations .gallerie li h3 {
   margin: 1vh 0;
   font-weight: bold;
   font-size: 3vh;
 }
-.nos-realisations .gallerie li img {
+.page-nos-realisations .gallerie li img {
   max-width: 600px;
   border-radius: 20px;
 }

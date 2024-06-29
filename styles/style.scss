@@ -117,9 +117,11 @@ nav {
         font-family: 'Caviar Dreams Bold';
         font-size: 2vh;
         text-shadow: 2px 3px 8px rgb(48, 48, 48);
+        transition: 0.2s ease-in-out;
         
         &:hover {
             text-shadow: 0 0 8px rgba(white, 0.8);
+            transition: 0.2s ease-in-out;
         } 
     }
 }
@@ -221,7 +223,7 @@ main {
         }
 
         h1 {
-            font-family: 'Caviar Dreams Bold';
+            font-family: 'Blacker Sans';
             font-size: 4vh;
         }
 
@@ -238,8 +240,10 @@ main {
     }
 
     .dix-ans {
-        padding: 10vh 200px;
+        padding: 10vh;
         position: relative;
+        max-width: 1800px;
+        margin: auto;
 
         .texte {
 
@@ -331,6 +335,7 @@ main {
                         width: 8vw;
                         height: 8vw;
                         fill: $pink-dark;
+                        filter: drop-shadow(5px 5px 3px rgba($pink-dark, 0.4));
                         transition: 0.2s ease-in-out;
                         
                     }
@@ -369,17 +374,52 @@ main {
     }
 
     .realisations {
-        height: 800px;
         background-image: url('/img/logo/ressort\ tapisserie.jpg');
         background-size: contain;
-        opacity: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10vh 0;
+
+        button {
+            width: 50px;
+            height: 50px;
+        }
+
+        a {
+            width: 70vw;
+            height: 70vh;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 25px;
+                object-fit: cover;
+
+            }
+
+            .legende {
+                position: absolute;
+                bottom: 2vh;
+                right: 2vw;
+
+                h3,p {
+                    color: $pink-light;
+                    text-align: center;
+                    filter: drop-shadow(0 0 10px rgba($pink-light, 1));
+                }
+
+
+            }
+        }
     }
     
 }
 
 // NOS REALISATIONS //
 
-.nos-realisations {
+.page-nos-realisations {
     margin: 0 0 10vh 0;
 
     .btn {
