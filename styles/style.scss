@@ -450,9 +450,13 @@ main {
     }
 
     .gallerie {
+        max-width: 2000px;
+        padding-inline: 2vw;
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        gap: 2rem;
 
         li {
             margin-top: 5vh;

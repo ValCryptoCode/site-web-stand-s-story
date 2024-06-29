@@ -360,9 +360,13 @@ main .realisations a .legende h3, main .realisations a .legende p {
   color: #F7EBE8;
 }
 .page-nos-realisations .gallerie {
+  max-width: 2000px;
+  padding-inline: 2vw;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 2rem;
 }
 .page-nos-realisations .gallerie li {
   margin-top: 5vh;
