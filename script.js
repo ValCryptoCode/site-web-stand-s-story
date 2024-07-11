@@ -37,9 +37,8 @@ function updateLines() {
       prevCircle = circle;
     }
   }
-  
+
   // Mettre à jour les lignes au chargement de la page
   window.onload = updateLines;
   // Mettre à jour les lignes lorsque la fenêtre est redimensionnée
   window.onresize = updateLines;
-  
