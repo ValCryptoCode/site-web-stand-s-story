@@ -5,7 +5,6 @@
     src: url('/fonts/CaviarDreams.ttf') format('truetype');
 }
 
-
 @font-face {
     font-family: 'Caviar Dreams Bold';
     src: url('/fonts/CaviarDreams_Bold.ttf') format('truetype');
@@ -36,6 +35,14 @@
     src: url('/fonts/TT\ Chocolates\ Trial\ Medium.otf') format('truetype');
 }
 
+
+// ----- FONT-SIZE ----- //
+
+$--fs-xl: 4rem;
+$--fs-600: 1.5rem;
+$--fs-400: 1rem;
+
+
 // ----- COLORS ----- //
 
 $pink: #CC7173;
@@ -43,7 +50,7 @@ $pink-dark: #984E52;
 $pink-light: #F7EBE8;
 
 
-// ----- GENERAL STYLE ----- //
+// ----- DEFAULT STYLE ----- //
 
 * {
     font-family: 'Caviar Dreams', sans-serif;
@@ -53,10 +60,20 @@ $pink-light: #F7EBE8;
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    color: $pink-dark;
 }
 
-.pink {
+main {
+    color: $pink-dark
+}
+
+nav, footer, nav a, footer a {
+    color: $pink-light;
+}
+
+
+// ----- COMMON MODIFIERS ----- //
+
+.background-pink {
     background-color: $pink;
 }
 
@@ -93,12 +110,8 @@ strong {
     color: #984E52;
 }
 
-nav, footer {
-    * {
-        color: $pink-light;
-    }
-}
 
+// ----- NAVBAR ----- //
 
 nav {
     width: 100%;
@@ -125,6 +138,9 @@ nav {
         } 
     }
 }
+
+
+// ----- FOOTER ----- //
 
 footer{
     background-color: $pink;
@@ -201,9 +217,7 @@ footer{
 }
 
 
-// ----- ACCUEIL STYLE  ----- //
-
-
+// ----- PAGE ACCUEIL ----- //
 
 main {
 
@@ -359,8 +373,8 @@ main {
         }
 
         .ma-ligne {
-            stroke: $pink-dark; /* Couleur de la ligne */
-            stroke-width: 1vw; /* Épaisseur de la ligne */
+            stroke: $pink-dark;
+            stroke-width: 1vw;
             stroke-linecap: round;
             stroke-linejoin: round;
         }
@@ -369,7 +383,7 @@ main {
             position: absolute;
             top: 0;
             left: 0;
-            z-index: -1;/* SVG sera sous les cercles avec un z-index négatif */
+            z-index: -1;
           }
     }
 
@@ -415,7 +429,6 @@ main {
                 height: 100%;
                 border-radius: 25px;
                 object-fit: cover;
-
             }
 
             .legende {
@@ -428,14 +441,13 @@ main {
                     text-align: center;
                     filter: drop-shadow(0 0 10px rgba($pink-light, 1));
                 }
-
             }
         }
     }
-    
 }
 
-// SOLUTIONS D'EXPOSITIONS
+
+// ----- PAGE SOLUTIONS D'EXPOSITIONS ----- //
 
 .page-solutions {
 
@@ -443,7 +455,7 @@ main {
         margin: 10vh auto;
         max-width: 900px;
         display: grid;
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(7, 1fr);  
         grid-template-rows: repeat(35, 1fr);
         column-gap: 2px;
         row-gap: 2px;
@@ -586,7 +598,8 @@ main {
     }
 }
 
-// NOS REALISATIONS //
+
+//  ----- PAGE NOS REALISATIONS  ----- //
 
 .page-nos-realisations {
     margin: 0 0 10vh 0;
@@ -647,7 +660,8 @@ main {
     
 }
 
-// CONTACT ///
+
+// ----- PAGE CONTACT ----- //
 
 .contact {
     display: flex;

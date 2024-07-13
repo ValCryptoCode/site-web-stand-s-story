@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Caviar Dreams";
   src: url("/fonts/CaviarDreams.ttf") format("truetype");
@@ -35,10 +34,17 @@
   list-style: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+main {
   color: #984E52;
 }
 
-.pink {
+nav, footer, nav a, footer a {
+  color: #F7EBE8;
+}
+
+.background-pink {
   background-color: #CC7173;
 }
 
@@ -73,10 +79,6 @@
 strong {
   font-family: "TT Chocolade";
   color: #984E52;
-}
-
-nav *, footer * {
-  color: #F7EBE8;
 }
 
 nav {
@@ -288,8 +290,8 @@ main .cle-en-main ul li:nth-child(3) {
   align-self: start;
 }
 main .cle-en-main .ma-ligne {
-  stroke: #984E52; /* Couleur de la ligne */
-  stroke-width: 1vw; /* Épaisseur de la ligne */
+  stroke: #984E52;
+  stroke-width: 1vw;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -297,7 +299,7 @@ main .cle-en-main #svg-connect {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; /* SVG sera sous les cercles avec un z-index négatif */
+  z-index: -1;
 }
 main .realisations {
   background-image: url("/img/logo/ressort tapisserie.jpg");
