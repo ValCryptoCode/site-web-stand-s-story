@@ -38,9 +38,10 @@
 
 // ----- FONT-SIZE ----- //
 
-$--fs-xl: 4rem;
-$--fs-600: 1.5rem;
-$--fs-400: 1rem;
+$--fs-extralarge: 3rem;
+$--fs-large: 1.5rem;
+$--fs-medium:1.2rem;
+$--fs-small: 1rem;
 
 
 // ----- COLORS ----- //
@@ -113,92 +114,140 @@ strong {
 
 // ----- CSS ----- //
 
-header {
+.welcome{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    .welcome{
-        height: 100vh;
+
+    background-image: url("pellenc.png");
+    background-size: cover;
+    background-position: center;    
+
+    .home {
+        height: 80%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+
+        img {
+            height: 50%;
+            filter: drop-shadow(5px 5px 5px $pink-dark);
+        }
+
+        h1 {
+            font-family: 'Blacker Sans';
+            font-size: clamp($--fs-large, 1.5vw, $--fs-extralarge);
+            text-align: center;
+
+            padding-inline: 1rem;
+        }
+
+        h2 {
+            font-family: 'Caviar Dreams Italic';
+            font-size: clamp($--fs-medium, 1.5vw, $--fs-extralarge);
+        }
+    }
+
+    .band {
+        height: 3%;
+        width: 100%;
+        background-color: $pink;
+    }
+}
+
+.navbar {
+    height: clamp(40px,7%,70px);
+    background-color: $pink;
+    box-shadow: 0 5px 10px rgba(black, 0.3);
+    padding: 0 2rem;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 70%;
+        }
+    }
+
+    ul {
+        width: 80%;
+        display: flex;
+        align-items: center;
         justify-content: space-between;
 
-
-        background-image: url("pellenc.png");
-        background-size: cover;
-        background-position: center;
-
-        nav {
-            height: clamp(40px,7%,100px);
-            box-shadow: 0 5px 10px rgba(black, 0.3);
-
-        
-            ul {
-                height: 100%;
-                width: 100%;
-                background-color: $pink;
-                padding: 0 5rem 0  1.5rem;
-        
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-        
-                li {
-                    a {
-                        font-family: 'Caviar Dreams Bold';
-                        font-size: clamp(10px,1.2vw, 30px);
-                        text-shadow: 2px 3px 8px rgb(48, 48, 48);
-                        transition: 0.2s ease-in-out;
-                        
-                        &:hover {
-                            text-shadow: 0 0 8px rgba(white, 0.8);
-                            transition: 0.2s ease-in-out;
-                        } 
-                    }
-
-                    &:first-child {
-                        height: 100%;
-                        display: flex;
-                        align-items: center;
-
-                        img {
-                            height: 70%;
-                        }   
-                    }
-                }
-            }   
-        }
-
-        .home {
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-
-
-            img {
-                height: 50%;
-                filter: drop-shadow(5px 5px 5px $pink-dark);
+        li {
+            a {
+                font-family: 'Caviar Dreams Bold';
+                font-size: clamp($--fs-small, .8vw, $--fs-medium);
+                text-shadow: 2px 3px 8px rgb(48, 48, 48);
+                transition: 0.2s ease-in-out;
+                
+                &:hover {
+                    text-shadow: 0 0 8px rgba(white, 0.8);
+                    transition: 0.2s ease-in-out;
+                } 
             }
-
-            h1 {
-                font-family: 'Blacker Sans';
-                font-size: 4vh;
-            }
-
-            h2 {
-                font-family: 'Caviar Dreams Italic';
-                font-size: 3vh;
-            }
-        }
-
-        .band {
-            height: 3%;
-            width: 100%;
-            background-color: $pink;
         }
     }
 }
 
+.toggle-btn-menu {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    display: none;
+    z-index: 2;
+
+    &:hover i {
+        filter: drop-shadow(0 0 8px rgba(white, 0.8));
+        transition: 0.2s ease-in-out;
+    }
+}   
+
+.dropdown-menu {
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+
+    background-color: rgba(white, $alpha: 0.3);
+    backdrop-filter: blur(15px);
+
+    a {
+        font-family: 'Caviar Dreams Bold';
+        color: $pink-light;
+        font-size: $--fs-large;
+        text-shadow: 2px 3px 8px $pink-dark;
+        transition: 0.2s ease-in-out;
+        
+        &:hover {
+            text-shadow: 0 0 8px rgba(white, 0.8);
+            transition: 0.2s ease-in-out;
+        }
+    } 
+}
+
+.open {
+    display: flex;
+}
 
 // ----- FOOTER ----- //
 
@@ -279,201 +328,192 @@ footer{
 
 // ----- PAGE ACCUEIL ----- //
 
+.dix-ans {
+    padding: 5vw;
+    position: relative;
+    max-width: 1500px;
+    margin: auto;
 
-main {
+    background-image: url(/img/logo/fond-pink-light.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 
-    .dix-ans {
-        padding: 10vh;
+    .texte {
+        width: 100%;
+
+        h2 {
+            font-size: $--fs-extralarge;
+            margin: 2vh 0;
+            color: $pink;
+        }
+
+        p {
+            width: 50vw;
+            color: $pink-dark;
+            font-size: $--fs-large;
+            font-family: 'TT Chocolade';
+            margin: 3vh 20px;
+            text-align: justify;
+        }
+    }
+}
+
+.references {
+    width: 100%;
+
+    .map {
+        height: 800px;
+
+    }
+}
+
+.cle-en-main {
+    width: 100%;
+
+    ul {
+        height: 60vmin;
+        display: flex;
+        justify-content: space-around;
+        margin: 10vh auto;
+        align-items: center;
         position: relative;
-        max-width: 1800px;
-        margin: auto;
 
-        .texte {
-
-            h2 {
-                font-size: 7vh;
-                margin: 2vh 0;
-                background: linear-gradient(90deg, rgba(204,113,115,1) 0%, rgba(247,235,232,1) 20%);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-            p {
-                width: 50vw;
-                color: $pink-dark;
-                font-size: 2.5vh;
-                font-family: 'TT Chocolade';
-                margin: 3vh 20px;
-                text-align: justify;
-            }
-        }
-
-        img {
-            opacity: 50%;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            right: 0;
-            height: 100%;
-        }
         
-    }
-
-    .references {
-        width: 100%;
-
-        .map {
-            height: 800px;
-
-        }
-    }
-
-    .cle-en-main {
-        width: 100%;
-
-        ul {
-            height: 60vmin;
+        li {
             display: flex;
-            justify-content: space-around;
-            margin: 10vh auto;
+            flex-direction: column;
             align-items: center;
-            position: relative;
 
-            
-            li {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            &:hover .rond{
+                background-color: $pink-dark;
+                cursor: pointer;
+            }
 
-                &:hover .rond{
-                    background-color: $pink-dark;
-                    cursor: pointer;
+            &:hover .svg {
+                fill: $pink-light;
+                transition: 0.2s ease-in-out;
+                width: 10vw;
+                height: 10vw;
+            }
+
+            &:hover .titre-anime {
+                filter: drop-shadow(1px 3px 5px rgba($pink-dark, 0.6));
+                font-size: 3vmin;
+                transition: 0.2s ease-in-out;
+            }
+
+            .rond {
+                background-color: $pink-light;
+                border: 0.3vw solid $pink-dark;
+                padding: 3vw;
+                border-radius: 50%;
+                transition: 0.2s ease-in-out;
+                
+                img {
+                    width: 8vw;
                 }
 
-                &:hover .svg {
-                    fill: $pink-light;
-                    transition: 0.2s ease-in-out;
-                    width: 10vw;
-                    height: 10vw;
-                }
-
-                &:hover .titre-anime {
-                    filter: drop-shadow(1px 3px 5px rgba($pink-dark, 0.6));
-                    font-size: 3vmin;
-                    transition: 0.2s ease-in-out;
-                }
-
-                .rond {
-                    background-color: $pink-light;
-                    border: 0.3vw solid $pink-dark;
-                    padding: 3vw;
-                    border-radius: 50%;
+                svg {
+                    width: 8vw;
+                    height: 8vw;
+                    fill: $pink-dark;
+                    filter: drop-shadow(5px 5px 3px rgba($pink-dark, 0.4));
                     transition: 0.2s ease-in-out;
                     
-                    img {
-                        width: 8vw;
-                    }
-
-                    svg {
-                        width: 8vw;
-                        height: 8vw;
-                        fill: $pink-dark;
-                        filter: drop-shadow(5px 5px 3px rgba($pink-dark, 0.4));
-                        transition: 0.2s ease-in-out;
-                        
-                    }
-                }
-
-                h4 {
-                    font-size: 2.5vmin;
-                    margin: 1vh;
-                    color: $pink-dark;
-                    transition: 0.2s ease-in-out;
                 }
             }
-                
-            li:nth-child(2) {
-                align-self: end;
-            }
 
-            li:nth-child(3) {
-                align-self: start;
+            h4 {
+                font-size: 2.5vmin;
+                margin: 1vh;
+                color: $pink-dark;
+                transition: 0.2s ease-in-out;
             }
         }
-
-        .ma-ligne {
-            stroke: $pink-dark;
-            stroke-width: 1vw;
-            stroke-linecap: round;
-            stroke-linejoin: round;
+            
+        li:nth-child(2) {
+            align-self: end;
         }
 
-        #svg-connect {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-          }
+        li:nth-child(3) {
+            align-self: start;
+        }
     }
 
-    .realisations {
-        background-image: url('/img/logo/ressort\ tapisserie.jpg');
-        background-size: contain;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10vh 0;
+    .ma-ligne {
+        stroke: $pink-dark;
+        stroke-width: 1vw;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
 
-        button {
-            width: 50px;
-            height: 50px;
-            background-color: rgba(255, 255, 255, 0);
-            border: none;
-            margin-inline: 1vw;
+    #svg-connect {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        }
+}
 
-            &:hover svg {
-                filter: drop-shadow(0 0 3px rgba($pink-dark, 0.5));
-            }
+.realisations {
+    background-image: url('/img/logo/ressort\ tapisserie.jpg');
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0;
 
-            &:active svg {
-                fill: $pink;
-            }
-            
-            svg {
-                fill: $pink-dark;
-            }
-        }    
+    button {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        margin-inline: 1vw;
 
-        .left {
-            transform: rotate(180deg);
+        &:hover svg {
+            filter: drop-shadow(0 0 3px rgba($pink-dark, 0.5));
         }
 
-        a {
-            width: 70vw;
-            height: 70vh;
-            position: relative;
+        &:active svg {
+            fill: $pink;
+        }
+        
+        svg {
+            fill: $pink-dark;
+        }
+    }    
 
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 25px;
-                object-fit: cover;
-            }
+    .left {
+        transform: rotate(180deg);
+    }
 
-            .legende {
-                position: absolute;
-                bottom: 2vh;
-                right: 2vw;
+    a {
+        width: 70vw;
+        height: 70vh;
+        position: relative;
 
-                h3,p {
-                    color: $pink-light;
-                    text-align: center;
-                    filter: drop-shadow(0 0 10px rgba($pink-light, 1));
-                }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+
+        .legende {
+            position: absolute;
+            bottom: 2vh;
+            right: 2vw;
+
+            h3,p {
+                color: $pink-light;
+                text-align: center;
+                filter: drop-shadow(0 0 10px rgba($pink-light, 1));
             }
         }
     }
 }
+
 
 
 // ----- PAGE SOLUTIONS D'EXPOSITIONS ----- //
@@ -766,3 +806,19 @@ main {
     }
 }
 
+
+// ----- MEDIA QUERIES ----- //
+
+@media screen and (max-width: 700px) {
+
+    .navbar ul {
+        display: none;
+    }
+    .toggle-btn-menu {
+        display: block;
+    }
+
+    .dix-ans .texte p {
+        width: 100%;
+    }
+}

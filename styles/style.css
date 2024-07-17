@@ -81,7 +81,7 @@ strong {
   color: #984E52;
 }
 
-header .welcome {
+.welcome {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -90,60 +90,108 @@ header .welcome {
   background-size: cover;
   background-position: center;
 }
-header .welcome nav {
-  height: clamp(40px, 7%, 100px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-header .welcome nav ul {
-  height: 100%;
-  width: 100%;
-  background-color: #CC7173;
-  padding: 0 5rem 0 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header .welcome nav ul li a {
-  font-family: "Caviar Dreams Bold";
-  font-size: clamp(10px, 1.2vw, 30px);
-  text-shadow: 2px 3px 8px rgb(48, 48, 48);
-  transition: 0.2s ease-in-out;
-}
-header .welcome nav ul li a:hover {
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-  transition: 0.2s ease-in-out;
-}
-header .welcome nav ul li:first-child {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-header .welcome nav ul li:first-child img {
-  height: 70%;
-}
-header .welcome .home {
+.welcome .home {
   height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-header .welcome .home img {
+.welcome .home img {
   height: 50%;
   filter: drop-shadow(5px 5px 5px #984E52);
 }
-header .welcome .home h1 {
+.welcome .home h1 {
   font-family: "Blacker Sans";
-  font-size: 4vh;
+  font-size: clamp(1.5rem, 1.5vw, 3rem);
+  text-align: center;
+  padding-inline: 1rem;
 }
-header .welcome .home h2 {
+.welcome .home h2 {
   font-family: "Caviar Dreams Italic";
-  font-size: 3vh;
+  font-size: clamp(1.2rem, 1.5vw, 3rem);
 }
-header .welcome .band {
+.welcome .band {
   height: 3%;
   width: 100%;
   background-color: #CC7173;
+}
+
+.navbar {
+  height: clamp(40px, 7%, 70px);
+  background-color: #CC7173;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 0 2rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.navbar .logo img {
+  height: 70%;
+}
+.navbar ul {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul li a {
+  font-family: "Caviar Dreams Bold";
+  font-size: clamp(1rem, 0.8vw, 1.2rem);
+  text-shadow: 2px 3px 8px rgb(48, 48, 48);
+  transition: 0.2s ease-in-out;
+}
+.navbar ul li a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  transition: 0.2s ease-in-out;
+}
+
+.toggle-btn-menu {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  display: none;
+  z-index: 2;
+}
+.toggle-btn-menu:hover i {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+  transition: 0.2s ease-in-out;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.dropdown-menu a {
+  font-family: "Caviar Dreams Bold";
+  color: #F7EBE8;
+  font-size: 1.5rem;
+  text-shadow: 2px 3px 8px #984E52;
+  transition: 0.2s ease-in-out;
+}
+.dropdown-menu a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  transition: 0.2s ease-in-out;
+}
+
+.open {
+  display: flex;
 }
 
 footer {
@@ -209,46 +257,44 @@ footer .foot-bot {
   background: linear-gradient(-90deg, rgb(204, 113, 115) 0%, rgb(247, 235, 232) 50%);
 }
 
-main .dix-ans {
-  padding: 10vh;
+.dix-ans {
+  padding: 5vw;
   position: relative;
-  max-width: 1800px;
+  max-width: 1500px;
   margin: auto;
+  background-image: url(/img/logo/fond-pink-light.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
-main .dix-ans .texte h2 {
-  font-size: 7vh;
+.dix-ans .texte {
+  width: 100%;
+}
+.dix-ans .texte h2 {
+  font-size: 3rem;
   margin: 2vh 0;
-  background: linear-gradient(90deg, rgb(204, 113, 115) 0%, rgb(247, 235, 232) 20%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #CC7173;
 }
-main .dix-ans .texte p {
+.dix-ans .texte p {
   width: 50vw;
   color: #984E52;
-  font-size: 2.5vh;
+  font-size: 1.5rem;
   font-family: "TT Chocolade";
   margin: 3vh 20px;
   text-align: justify;
 }
-main .dix-ans img {
-  opacity: 50%;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  height: 100%;
-}
-main .references {
+
+.references {
   width: 100%;
 }
-main .references .map {
+.references .map {
   height: 800px;
 }
-main .cle-en-main {
+
+.cle-en-main {
   width: 100%;
 }
-main .cle-en-main ul {
+.cle-en-main ul {
   height: 60vmin;
   display: flex;
   justify-content: space-around;
@@ -256,68 +302,69 @@ main .cle-en-main ul {
   align-items: center;
   position: relative;
 }
-main .cle-en-main ul li {
+.cle-en-main ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .cle-en-main ul li:hover .rond {
+.cle-en-main ul li:hover .rond {
   background-color: #984E52;
   cursor: pointer;
 }
-main .cle-en-main ul li:hover .svg {
+.cle-en-main ul li:hover .svg {
   fill: #F7EBE8;
   transition: 0.2s ease-in-out;
   width: 10vw;
   height: 10vw;
 }
-main .cle-en-main ul li:hover .titre-anime {
+.cle-en-main ul li:hover .titre-anime {
   filter: drop-shadow(1px 3px 5px rgba(152, 78, 82, 0.6));
   font-size: 3vmin;
   transition: 0.2s ease-in-out;
 }
-main .cle-en-main ul li .rond {
+.cle-en-main ul li .rond {
   background-color: #F7EBE8;
   border: 0.3vw solid #984E52;
   padding: 3vw;
   border-radius: 50%;
   transition: 0.2s ease-in-out;
 }
-main .cle-en-main ul li .rond img {
+.cle-en-main ul li .rond img {
   width: 8vw;
 }
-main .cle-en-main ul li .rond svg {
+.cle-en-main ul li .rond svg {
   width: 8vw;
   height: 8vw;
   fill: #984E52;
   filter: drop-shadow(5px 5px 3px rgba(152, 78, 82, 0.4));
   transition: 0.2s ease-in-out;
 }
-main .cle-en-main ul li h4 {
+.cle-en-main ul li h4 {
   font-size: 2.5vmin;
   margin: 1vh;
   color: #984E52;
   transition: 0.2s ease-in-out;
 }
-main .cle-en-main ul li:nth-child(2) {
+.cle-en-main ul li:nth-child(2) {
   align-self: end;
 }
-main .cle-en-main ul li:nth-child(3) {
+.cle-en-main ul li:nth-child(3) {
   align-self: start;
 }
-main .cle-en-main .ma-ligne {
+.cle-en-main .ma-ligne {
   stroke: #984E52;
   stroke-width: 1vw;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-main .cle-en-main #svg-connect {
+.cle-en-main #svg-connect {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
-main .realisations {
+
+.realisations {
   background-image: url("/img/logo/ressort tapisserie.jpg");
   background-size: contain;
   display: flex;
@@ -325,43 +372,43 @@ main .realisations {
   align-items: center;
   padding: 10vh 0;
 }
-main .realisations button {
+.realisations button {
   width: 50px;
   height: 50px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   margin-inline: 1vw;
 }
-main .realisations button:hover svg {
+.realisations button:hover svg {
   filter: drop-shadow(0 0 3px rgba(152, 78, 82, 0.5));
 }
-main .realisations button:active svg {
+.realisations button:active svg {
   fill: #CC7173;
 }
-main .realisations button svg {
+.realisations button svg {
   fill: #984E52;
 }
-main .realisations .left {
+.realisations .left {
   transform: rotate(180deg);
 }
-main .realisations a {
+.realisations a {
   width: 70vw;
   height: 70vh;
   position: relative;
 }
-main .realisations a img {
+.realisations a img {
   width: 100%;
   height: 100%;
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .realisations a .legende {
+.realisations a .legende {
   position: absolute;
   bottom: 2vh;
   right: 2vw;
 }
-main .realisations a .legende h3, main .realisations a .legende p {
+.realisations a .legende h3, .realisations a .legende p {
   color: #F7EBE8;
   text-align: center;
   filter: drop-shadow(0 0 10px #f7ebe8);
@@ -590,4 +637,16 @@ main .realisations a .legende h3, main .realisations a .legende p {
   color: #F7EBE8;
   font-weight: bold;
   font-size: 2vh;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar ul {
+    display: none;
+  }
+  .toggle-btn-menu {
+    display: block;
+  }
+  .dix-ans .texte p {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

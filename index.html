@@ -10,15 +10,22 @@
 
     <header>
         <section class="welcome">
-            <nav>
+            <nav class="navbar">
+                <div class="logo"><img src="img/logo/logo-simple-blanc.png" alt="logo-accueil"></div>
                 <ul>
-                    <li><img src="img/logo/logo-simple-blanc.png" alt="logo-accueil"></li>
                     <li><a class="navigation active" href="index.html">ACCUEIL</a></li>
                     <li><a class="navigation" href="solutions.html">SOLUTIONS D'EXPOSITION</a></li>
                     <li><a class="navigation" href="realisations.html">REALISATIONS</a></li>
                     <li><a class="navigation" href="contact.html">CONTACT</a></li>
                 </ul>
+                <button class="toggle-btn-menu"><i class="fa-solid fa-bars fa-2xl" style="color: #F7EBE8;"></i></button>
             </nav>
+            <div class="dropdown-menu">
+                <li><a class="navigation active" href="index.html">ACCUEIL</a></li>
+                <li><a class="navigation" href="solutions.html">SOLUTIONS D'EXPOSITION</a></li>
+                <li><a class="navigation" href="realisations.html">REALISATIONS</a></li>
+                <li><a class="navigation" href="contact.html">CONTACT</a></li>
+            </div>
             <div class="home">
                 <img src="img/logo/logo pink light.png" alt="logo">
                 <h1 class="txt-pinklight glow-pinkdark">CONCEPTEUR DE STANDS POUR SALONS PROFESSIONNELS</h1>
@@ -39,7 +46,6 @@
                 <p>L’agence <strong>STAND’S STORY</strong> met son expertise à votre service pour valoriser et optimiser votre projet en créant un concept
                     autour de votre univers, une ambiance un stand à votre image !</p>                
             </div>
-            <img src="img/logo/fond-pink-light.png" alt="logo">
         </section>
         <section class="references">
             <div class="titre-section">
@@ -104,5 +110,7 @@
     </footer>
 
 <script src="script.js"></script>
+<script src="navbar.js"></script>
+<script src="https://kit.fontawesome.com/411b519271.js" crossorigin="anonymous"></script>
 </body>
 </html>
