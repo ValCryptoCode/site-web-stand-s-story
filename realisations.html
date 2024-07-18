@@ -8,14 +8,23 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/logo/logo-simple-blanc.png" alt="logo-accueil">
-            <a class="" href="index.html">ACCUEIL</a>
-            <a class="" href="solutions.html">SOLUTIONS D'EXPOSITION</a>
-            <a class="active" href="realisations.html">REALISATIONS</a>
-            <a class="" href="contact.html">CONTACT</a>
+        <nav class="navbar">
+            <div class="logo"><img src="img/logo/logo-simple-blanc.png" alt="logo-accueil"></div>
+            <ul>
+                <li><a class="navigation active" href="index.html">ACCUEIL</a></li>
+                <li><a class="navigation" href="solutions.html">SOLUTIONS D'EXPOSITION</a></li>
+                <li><a class="navigation" href="realisations.html">REALISATIONS</a></li>
+                <li><a class="navigation" href="contact.html">CONTACT</a></li>
+            </ul>
+            <button class="toggle-btn-menu"><i class="fa-solid fa-bars fa-2xl" style="color: #F7EBE8;"></i></button>
         </nav>
-    </header> 
+        <div class="dropdown-menu">
+            <li><a class="navigation active" href="index.html">ACCUEIL</a></li>
+            <li><a class="navigation" href="solutions.html">SOLUTIONS D'EXPOSITION</a></li>
+            <li><a class="navigation" href="realisations.html">REALISATIONS</a></li>
+            <li><a class="navigation" href="contact.html">CONTACT</a></li>
+        </div>
+    </header>   
     <main>
         <section class="page-nos-realisations">
             <div class="titre-section">
@@ -32,37 +41,37 @@
                 <li>
                     <img src="img/stands/jallatte.jpg" alt="Jallatte">
                     <h3>JALLATTE - 42m²</h3>
-                    <p>PREVENTICA - Toulouse</p>
+                    <p><i class="fa-solid fa-location-dot"></i> PREVENTICA - Toulouse</p>
                 </li>
                 <li>
                     <img src="img/stands/upower.jpg" alt="U-Power">
                     <h3>U-Power - 36m²</h3>
-                    <p>PREVENTICA - Toulouse</p>
+                    <p><i class="fa-solid fa-location-dot"></i> PREVENTICA - Toulouse</p>
                 </li>
                 <li>
                     <img src="img/stands/jeeper.jpg" alt="Jeeper">
                     <h3>JEEPER - 36m²</h3>
-                    <p>SIRHA - Lyon</p>
+                    <p><i class="fa-solid fa-location-dot"></i> SIRHA - Lyon</p>
                 </li>
                 <li>
                     <img src="img/stands/kokiriki.jpg" alt="Kokiriki">
                     <h3>KOKIRIKI - 52m²</h3>
-                    <p>SIAL - Paris</p>
+                    <p><i class="fa-solid fa-location-dot"></i> SIAL - Paris</p>
                 </li>
                 <li>
                     <img src="img/stands/lma.JPG" alt="LMA">
                     <h3>LMA - 72m²</h3>
-                    <p>EXPO PROTECTION - Paris</p>
+                    <p><i class="fa-solid fa-location-dot"></i> EXPO PROTECTION - Paris</p>
                 </li>
                 <li>
                     <img src="img/stands/sfe.jpg" alt="SFE">
                     <h3>SFE - 107m²</h3>
-                    <p>SIRHA - Lyon Eurexpo</p>
+                    <p><i class="fa-solid fa-location-dot"></i> SIRHA - Lyon Eurexpo</p>
                 </li>
                 <li>
                     <img src="img/stands/pellenc.jpg" alt="Pellenc">
                     <h3>PELLENC ST - 136m²</h3>
-                    <p>POLLUTEC - Lyon Eurexpo</p>
+                    <p><i class="fa-solid fa-location-dot"></i> POLLUTEC - Lyon Eurexpo</p>
                 </li>
             </ul>
         </section>
@@ -89,4 +98,7 @@
         </div>
     </footer>
 </body>
+
+<script src="navbar.js"></script>
+<script src="https://kit.fontawesome.com/411b519271.js" crossorigin="anonymous"></script>
 </html>

@@ -118,7 +118,7 @@ strong {
 }
 
 .navbar {
-  height: clamp(40px, 7%, 70px);
+  height: clamp(40px, 7vh, 70px);
   background-color: #CC7173;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   padding: 0 2rem;
@@ -173,20 +173,20 @@ strong {
   right: 0;
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  padding: 20% 2rem;
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
 }
 .dropdown-menu a {
   font-family: "Caviar Dreams Bold";
-  color: #F7EBE8;
-  font-size: 1.5rem;
-  text-shadow: 2px 3px 8px #984E52;
+  color: #CC7173;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 7px #F7EBE8;
   transition: 0.2s ease-in-out;
 }
 .dropdown-menu a:hover {
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  color: #F7EBE8;
   transition: 0.2s ease-in-out;
 }
 
@@ -249,7 +249,7 @@ footer .foot-bot {
 }
 .titre-section h3 {
   display: inline;
-  font-size: 3vmin;
+  font-size: clamp(1.2rem, 1.3vw, 1.5rem);
 }
 
 .reverse {
@@ -258,7 +258,8 @@ footer .foot-bot {
 }
 
 .dix-ans {
-  padding: 5vw;
+  padding-block: min(20vh, 7rem);
+  padding-inline: min(5vw, 5rem);
   position: relative;
   max-width: 1500px;
   margin: auto;
@@ -276,12 +277,12 @@ footer .foot-bot {
   color: #CC7173;
 }
 .dix-ans .texte p {
-  width: 50vw;
+  width: 60%;
   color: #984E52;
   font-size: 1.5rem;
-  font-family: "TT Chocolade";
-  margin: 3vh 20px;
   text-align: justify;
+  font-family: "TT Chocolade";
+  padding-block: min(3vh, 3rem);
 }
 
 .references {
@@ -508,7 +509,6 @@ footer .foot-bot {
   grid-row: 30/32;
 }
 .page-solutions .bulle-conseil .minibulle {
-  border: 1px solid black;
   width: 100%;
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -521,7 +521,6 @@ footer .foot-bot {
 .page-solutions svg {
   width: 100%;
   height: 1000%;
-  border: 2px solid black;
   position: absolute;
   top: 0;
   left: 0;
@@ -646,6 +645,22 @@ footer .foot-bot {
   .toggle-btn-menu {
     display: block;
   }
+  footer .foot-top {
+    flex-direction: column;
+  }
+  footer .foot-top .infos {
+    padding-block: 2rem;
+    width: 100%;
+  }
+  footer .foot-top .follow {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  footer .foot-bot {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1100px) {
   .dix-ans .texte p {
     width: 100%;
   }

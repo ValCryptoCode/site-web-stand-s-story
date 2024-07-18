@@ -160,7 +160,7 @@ strong {
 }
 
 .navbar {
-    height: clamp(40px,7%,70px);
+    height: clamp(40px,7vh,70px);
     background-color: $pink;
     box-shadow: 0 5px 10px rgba(black, 0.3);
     padding: 0 2rem;
@@ -226,20 +226,20 @@ strong {
     right: 0;
     width: 100%;
     height: 100%;
-    padding: 2rem;
+    padding: 20% 2rem;
 
     background-color: rgba(white, $alpha: 0.3);
     backdrop-filter: blur(15px);
 
     a {
         font-family: 'Caviar Dreams Bold';
-        color: $pink-light;
-        font-size: $--fs-large;
-        text-shadow: 2px 3px 8px $pink-dark;
+        color: $pink;
+        font-size: $--fs-medium;
+        text-shadow: 0px 0px 7px $pink-light;
         transition: 0.2s ease-in-out;
         
         &:hover {
-            text-shadow: 0 0 8px rgba(white, 0.8);
+            color: $pink-light;
             transition: 0.2s ease-in-out;
         }
     } 
@@ -316,7 +316,7 @@ footer{
 
     h3 {
         display: inline;
-        font-size: 3vmin;
+        font-size: clamp($--fs-medium, 1.3vw, $--fs-large);
     }
 }
 
@@ -329,7 +329,8 @@ footer{
 // ----- PAGE ACCUEIL ----- //
 
 .dix-ans {
-    padding: 5vw;
+    padding-block: min(20vh, 7rem);
+    padding-inline: min(5vw, 5rem);
     position: relative;
     max-width: 1500px;
     margin: auto;
@@ -349,12 +350,12 @@ footer{
         }
 
         p {
-            width: 50vw;
+            width: 60%;
             color: $pink-dark;
             font-size: $--fs-large;
-            font-family: 'TT Chocolade';
-            margin: 3vh 20px;
             text-align: justify;
+            font-family: 'TT Chocolade';
+            padding-block: min(3vh,3rem);
         }
     }
 }
@@ -635,7 +636,6 @@ footer{
 
 
         .minibulle {
-            border: 1px solid black;
             width: 100%;
             border-radius: 50%;
             aspect-ratio: 1 / 1;
@@ -654,7 +654,6 @@ footer{
     svg {
         width: 100%;
         height: 1000%;
-        border: 2px solid black;
         position: absolute;
         top: 0;
         left: 0;
@@ -814,11 +813,35 @@ footer{
     .navbar ul {
         display: none;
     }
+
     .toggle-btn-menu {
         display: block;
     }
 
-    .dix-ans .texte p {
+    footer .foot-top {
+        flex-direction: column;
+
+        .infos {
+            padding-block: 2rem;
+            width: 100%;
+
+        }
+
+        .follow {
+            width: 100%;
+            padding-bottom: 2rem;
+        }
+    }
+
+    footer .foot-bot {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .dix-ans .texte p{
         width: 100%;
     }
 }

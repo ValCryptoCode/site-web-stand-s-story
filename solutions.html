@@ -8,14 +8,23 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/logo/logo-simple-blanc.png" alt="logo-accueil">
-            <a class="" href="index.html">ACCUEIL</a>
-            <a class="active" href="solutions.html">SOLUTIONS D'EXPOSITION</a>
-            <a class="" href="realisations.html">REALISATIONS</a>
-            <a class="" href="contact.html">CONTACT</a>
+        <nav class="navbar">
+            <div class="logo"><img src="img/logo/logo-simple-blanc.png" alt="logo-accueil"></div>
+            <ul>
+                <li><a class="navigation active" href="index.html">ACCUEIL</a></li>
+                <li><a class="navigation" href="solutions.html">SOLUTIONS D'EXPOSITION</a></li>
+                <li><a class="navigation" href="realisations.html">REALISATIONS</a></li>
+                <li><a class="navigation" href="contact.html">CONTACT</a></li>
+            </ul>
+            <button class="toggle-btn-menu"><i class="fa-solid fa-bars fa-2xl" style="color: #F7EBE8;"></i></button>
         </nav>
-    </header> 
+        <div class="dropdown-menu">
+            <li><a class="navigation active" href="index.html">ACCUEIL</a></li>
+            <li><a class="navigation" href="solutions.html">SOLUTIONS D'EXPOSITION</a></li>
+            <li><a class="navigation" href="realisations.html">REALISATIONS</a></li>
+            <li><a class="navigation" href="contact.html">CONTACT</a></li>
+        </div>
+    </header>   
     <main>
         <section class="page-solutions">
             <div class="titre-section">
@@ -70,4 +79,8 @@
     </footer>
     <script src="solutions.js"></script>
 </body>
+
+
+<script src="navbar.js"></script>
+<script src="https://kit.fontawesome.com/411b519271.js" crossorigin="anonymous"></script>
 </html>
