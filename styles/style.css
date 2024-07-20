@@ -81,6 +81,10 @@ strong {
   color: #984E52;
 }
 
+header {
+  position: relative;
+}
+
 .welcome {
   height: 100vh;
   display: flex;
@@ -122,7 +126,6 @@ strong {
   background-color: #CC7173;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   padding: 0 2rem;
-  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -155,7 +158,7 @@ strong {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   display: none;
-  z-index: 2;
+  z-index: 3;
 }
 .toggle-btn-menu:hover i {
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
@@ -167,12 +170,12 @@ strong {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 2;
   top: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 20% 2rem;
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(15px);
@@ -260,7 +263,6 @@ footer .foot-bot {
 .dix-ans {
   padding-block: min(20vh, 7rem);
   padding-inline: min(5vw, 5rem);
-  position: relative;
   max-width: 1500px;
   margin: auto;
   background-image: url(/img/logo/fond-pink-light.png);
@@ -396,6 +398,7 @@ footer .foot-bot {
   width: 70vw;
   height: 70vh;
   position: relative;
+  filter: drop-shadow(0 0 1rem #cc7173);
 }
 .realisations a img {
   width: 100%;
@@ -565,9 +568,11 @@ html {
 }
 
 .render {
-  width: 90%;
-  height: 800px;
-  margin: 0 auto;
+  aspect-ratio: 3909/2375;
+  width: clamp(300px, 70vw, 2000px);
+  margin: 10vh auto;
+  border-radius: 20px;
+  box-shadow: 0 0px 2rem #cc7173;
   background-image: url(/img/stands/vue3D.jpg);
   background-position: center;
   background-size: cover;
@@ -576,25 +581,74 @@ html {
   align-items: end;
 }
 
+.alternate {
+  background-image: url(/img/stands/final-render.jpg);
+}
+
 .slider-button {
-  background-color: red;
-  padding: 1rem;
-  border-radius: 30px;
   display: flex;
+  align-items: end;
   justify-content: center;
+  margin-bottom: 1rem;
 }
-.slider-button button {
+
+.toggleContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 3px solid #CC7173;
+  border-radius: 20px;
+  background: #CC7173;
+  font-weight: bold;
   color: #CC7173;
-  background-color: #F7EBE8;
-  border: none;
-  padding: 1rem;
-  font-size: 1.2rem;
+  cursor: pointer;
 }
-.slider-button :nth-child(1) {
-  border-radius: 20px 0 0 20px;
+
+.toggleContainer::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0%;
+  border-radius: 20px;
+  background: #F7EBE8;
+  transition: all 0.3s;
 }
-.slider-button :nth-child(2) {
-  border-radius: 0 20px 20px 0;
+
+.toggleCheckbox:checked + .toggleContainer::before {
+  left: 50%;
+}
+
+.toggleContainer div {
+  padding: 6px;
+  text-align: center;
+  z-index: 1;
+}
+
+.toggleCheckbox {
+  display: none;
+}
+
+.toggleCheckbox:checked + .toggleContainer div:first-child {
+  color: #F7EBE8;
+  transition: color 0.3s;
+}
+
+.toggleCheckbox:checked + .toggleContainer div:last-child {
+  color: #CC7173;
+  transition: color 0.3s;
+}
+
+.toggleCheckbox + .toggleContainer div:first-child {
+  color: #CC7173;
+  transition: color 0.3s;
+}
+
+.toggleCheckbox + .toggleContainer div:last-child {
+  color: #F7EBE8;
+  transition: color 0.3s;
 }
 
 .page-nos-realisations {
@@ -678,6 +732,9 @@ html {
 .contact .right form {
   display: flex;
   flex-direction: column;
+}
+.contact .right form input:focus, .contact .right form textarea:focus {
+  outline: 2px solid #984E52;
 }
 .contact .right form .np {
   display: inline;
