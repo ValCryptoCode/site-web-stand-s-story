@@ -415,100 +415,131 @@ footer .foot-bot {
   filter: drop-shadow(0 0 10px #f7ebe8);
 }
 
-.page-solutions .bulle-conseil {
-  margin: 10vh auto;
-  max-width: 900px;
+html {
+  position: relative;
+}
+
+.bubbles-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bulles {
+  width: 700px;
+  margin: 0 auto;
+  padding: min(2rem, 5vw);
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(35, 1fr);
   -moz-column-gap: 2px;
        column-gap: 2px;
   row-gap: 2px;
   justify-items: center;
   align-items: center;
-  position: relative;
 }
-.page-solutions .bulle-conseil :nth-child(1) {
+.bulles p {
+  text-align: center;
+}
+
+.bulle-conseil {
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+}
+.bulle-conseil :nth-child(1) {
   grid-row: 1/4;
   grid-column: 1/4;
 }
-.page-solutions .bulle-conseil :nth-child(2) {
+.bulle-conseil :nth-child(2) {
   grid-column: 6/8;
   grid-row: 2/4;
 }
-.page-solutions .bulle-conseil :nth-child(3) {
+.bulle-conseil :nth-child(3) {
   grid-column: 4/6;
   grid-row: 4/6;
 }
-.page-solutions .bulle-conseil :nth-child(4) {
+.bulle-conseil :nth-child(4) {
   grid-column: 1/3;
   grid-row: 5/7;
 }
-.page-solutions .bulle-conseil :nth-child(5) {
-  grid-column: 5/8;
-  grid-row: 7/10;
+
+.bulle-conception {
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
 }
-.page-solutions .bulle-conseil :nth-child(6) {
+.bulle-conception :nth-child(1) {
+  grid-column: 5/8;
+  grid-row: 1/4;
+}
+.bulle-conception :nth-child(2) {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+.bulle-conception :nth-child(3) {
+  grid-column: 1/3;
+  grid-row: 5/7;
+}
+.bulle-conception :nth-child(4) {
+  grid-column: 6/8;
+  grid-row: 5/7;
+}
+.bulle-conception :nth-child(5) {
+  grid-column: 4/6;
+  grid-row: 7/9;
+}
+
+.bulle-accompagnement {
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+}
+.bulle-accompagnement :nth-child(1) {
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+.bulle-accompagnement :nth-child(2) {
+  grid-column: 6/8;
+  grid-row: 2/4;
+}
+.bulle-accompagnement :nth-child(3) {
+  grid-column: 2/4;
+  grid-row: 5/7;
+}
+.bulle-accompagnement :nth-child(4) {
+  grid-column: 5/7;
+  grid-row: 6/8;
+}
+
+.bulle-realisation {
+  grid-template-rows: repeat(11, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+}
+.bulle-realisation :nth-child(1) {
+  grid-column: 2/5;
+  grid-row: 1/4;
+}
+.bulle-realisation :nth-child(2) {
+  grid-column: 6/8;
+  grid-row: 2/4;
+}
+.bulle-realisation :nth-child(3) {
+  grid-column: 1/3;
+  grid-row: 5/7;
+}
+.bulle-realisation :nth-child(4) {
   grid-column: 2/4;
   grid-row: 8/10;
 }
-.page-solutions .bulle-conseil :nth-child(7) {
-  grid-column: 1/3;
-  grid-row: 11/13;
-}
-.page-solutions .bulle-conseil :nth-child(8) {
-  grid-column: 6/8;
-  grid-row: 11/13;
-}
-.page-solutions .bulle-conseil :nth-child(9) {
-  grid-column: 4/6;
-  grid-row: 13/15;
-}
-.page-solutions .bulle-conseil :nth-child(10) {
-  grid-column: 1/4;
-  grid-row: 16/19;
-}
-.page-solutions .bulle-conseil :nth-child(11) {
-  grid-column: 6/8;
-  grid-row: 17/19;
-}
-.page-solutions .bulle-conseil :nth-child(12) {
-  grid-column: 2/4;
-  grid-row: 20/22;
-}
-.page-solutions .bulle-conseil :nth-child(13) {
+.bulle-realisation :nth-child(5) {
   grid-column: 5/7;
-  grid-row: 21/23;
+  grid-row: 10/12;
 }
-.page-solutions .bulle-conseil :nth-child(14) {
-  grid-column: 2/5;
-  grid-row: 24/27;
-}
-.page-solutions .bulle-conseil :nth-child(15) {
-  grid-column: 6/8;
-  grid-row: 25/27;
-}
-.page-solutions .bulle-conseil :nth-child(16) {
-  grid-column: 1/3;
-  grid-row: 28/30;
-}
-.page-solutions .bulle-conseil :nth-child(17) {
-  grid-column: 2/4;
-  grid-row: 31/33;
-}
-.page-solutions .bulle-conseil :nth-child(18) {
-  grid-column: 5/7;
-  grid-row: 33/35;
-}
-.page-solutions .bulle-conseil :nth-child(19) {
+.bulle-realisation :nth-child(6) {
   grid-column: 4/6;
-  grid-row: 28/30;
+  grid-row: 5/7;
 }
-.page-solutions .bulle-conseil :nth-child(20) {
+.bulle-realisation :nth-child(7) {
   grid-column: 6/8;
-  grid-row: 30/32;
+  grid-row: 7/9;
 }
-.page-solutions .bulle-conseil .minibulle {
+
+.minibulle {
   width: 100%;
   border-radius: 50%;
   aspect-ratio: 1/1;
@@ -518,17 +549,52 @@ footer .foot-bot {
   justify-content: center;
   align-items: center;
 }
-.page-solutions svg {
+
+.bubbles-section svg {
   width: 100%;
-  height: 1000%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
-.page-solutions svg .connection {
+
+.connection {
   stroke: #984E52;
   stroke-width: 1vw;
+}
+
+.render {
+  width: 90%;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url(/img/stands/vue3D.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.slider-button {
+  background-color: red;
+  padding: 1rem;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+.slider-button button {
+  color: #CC7173;
+  background-color: #F7EBE8;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.slider-button :nth-child(1) {
+  border-radius: 20px 0 0 20px;
+}
+.slider-button :nth-child(2) {
+  border-radius: 0 20px 20px 0;
 }
 
 .page-nos-realisations {
