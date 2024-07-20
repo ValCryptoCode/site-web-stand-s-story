@@ -194,14 +194,31 @@ header {
                 font-size: clamp($--fs-small, .8vw, $--fs-medium);
                 text-shadow: 2px 3px 8px rgb(48, 48, 48);
                 transition: 0.2s ease-in-out;
+                position: relative;
                 
                 &:hover {
-                    text-shadow: 0 0 8px rgba(white, 0.8);
+                    text-shadow: 0 0 5px rgba($pink-light, 0.8);
                     transition: 0.2s ease-in-out;
                 } 
             }
         }
     }
+}
+
+.navbar .active {
+    text-shadow: 0 0 5px rgba($pink-light, 0.8);
+
+}
+
+.active::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -20%;
+    width: 100%;
+    height: 2px;
+    background-color: $pink-light;
+    box-shadow: 0 0 5px rgba($pink-light, 0.8);
 }
 
 .toggle-btn-menu {
@@ -238,7 +255,7 @@ header {
         font-family: 'Caviar Dreams Bold';
         color: $pink;
         font-size: $--fs-medium;
-        text-shadow: 0px 0px 7px $pink-light;
+        text-shadow: 0px 0px 5px $pink-light;
         transition: 0.2s ease-in-out;
         
         &:hover {
@@ -306,10 +323,6 @@ footer{
         display: flex;
         justify-content: space-between;
     }
-}
-
-.active {
-    text-shadow: 0 0 8px rgba(white, 0.8);
 }
 
 .titre-section {
@@ -517,7 +530,6 @@ footer{
         }
     }
 }
-
 
 
 // ----- PAGE SOLUTIONS D'EXPOSITIONS ----- //
@@ -738,7 +750,7 @@ html {
 }
 
 .toggleContainer::before {
-content: '';
+    content: '';
     position: absolute;
     width: 50%;
     height: 100%;
@@ -792,25 +804,26 @@ content: '';
         padding: 5vh 2vw;
 
         button {
-            border: 2px solid $pink-dark;
+            border: 2px solid $pink;
             border-radius: 5px;
-            color: $pink-dark;
+            color: $pink;
             background-color: white;
             padding: 1vmin;
 
             &:hover {
-                background-color: $pink-light;
+                background-color: $pink;
+                color: $pink-light;
                 transition: 0.2s;
             }
 
             &:active {
-                background-color: $pink-dark;
+                background-color: $pink;
                 color: $pink-light;
             }
         }
 
         .selected {
-            background-color: $pink-dark;
+            background-color: $pink;
             color: $pink-light;
         }
     }
