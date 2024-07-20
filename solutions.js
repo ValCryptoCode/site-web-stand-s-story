@@ -43,10 +43,6 @@ function updateConnections() {
 window.onload = function() {
     const svgContainer = document.getElementById("svgContainer");
 
-    const bubble1 = document.getElementById("bulle1");
-    const bubble2 = document.getElementById("bulle2");
-    const bubble3 = document.getElementById("bulle3");
-
     updateConnections();
 
     window.onresize = updateConnections;
