@@ -20,7 +20,7 @@ function connectBubbles(bubble1, bubble2) {
 }
 
 function updateConnections() {
-    svgContainer.innerHTML = ''; // Clear existing lines
+    svgContainer.innerHTML = '';
     connectBubbles(bulle1, bulle2);
     connectBubbles(bulle2, bulle3);
     connectBubbles(bulle3, bulle4);
@@ -37,7 +37,6 @@ function updateConnections() {
     connectBubbles(bulle17, bulle18);
     connectBubbles(bulle17, bulle19);
     connectBubbles(bulle19, bulle20);
-    // Ajoutez d'autres connexions ici
 }
 
 window.onload = function() {

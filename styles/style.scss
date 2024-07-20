@@ -380,7 +380,6 @@ footer{
         justify-content: space-around;
         margin: 10vh auto;
         align-items: center;
-        position: relative;
 
         
         li {
@@ -444,15 +443,16 @@ footer{
         }
     }
 
-    .ma-ligne {
+    .connection {
         stroke: $pink-dark;
         stroke-width: 1vw;
         stroke-linecap: round;
         stroke-linejoin: round;
     }
 
-    #svg-connect {
+    #svgContainer {
         position: absolute;
+        height: 100%;
         top: 0;
         left: 0;
         z-index: -1;

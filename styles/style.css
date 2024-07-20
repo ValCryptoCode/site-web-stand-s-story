@@ -303,7 +303,6 @@ footer .foot-bot {
   justify-content: space-around;
   margin: 10vh auto;
   align-items: center;
-  position: relative;
 }
 .cle-en-main ul li {
   display: flex;
@@ -354,14 +353,15 @@ footer .foot-bot {
 .cle-en-main ul li:nth-child(3) {
   align-self: start;
 }
-.cle-en-main .ma-ligne {
+.cle-en-main .connection {
   stroke: #984E52;
   stroke-width: 1vw;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.cle-en-main #svg-connect {
+.cle-en-main #svgContainer {
   position: absolute;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: -1;
