@@ -90,7 +90,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("pellenc.png");
+  background-image: url("/styles/pellenc.png");
   background-size: cover;
   background-position: center;
 }
@@ -277,7 +277,7 @@ footer .foot-bot {
   padding-inline: min(5vw, 5rem);
   max-width: 1500px;
   margin: auto;
-  background-image: url(/img/logo/fond-pink-light.png);
+  background-image: url(/assets/logo/fond-pink-light.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -380,7 +380,7 @@ footer .foot-bot {
 }
 
 .realisations {
-  background-image: url("/img/logo/ressort tapisserie.jpg");
+  background-image: url("/assets/logo/ressort tapisserie.jpg");
   background-size: contain;
   display: flex;
   justify-content: center;
@@ -585,7 +585,7 @@ html {
   margin: 10vh auto;
   border-radius: 20px;
   box-shadow: 0 0px 2rem #cc7173;
-  background-image: url(/img/stands/vue3D.jpg);
+  background-image: url(/assets/stands/vue3D.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -594,7 +594,7 @@ html {
 }
 
 .alternate {
-  background-image: url(/img/stands/final-render.jpg);
+  background-image: url(/assets/stands/final-render.jpg);
 }
 
 .slider-button {
@@ -690,25 +690,30 @@ html {
   color: #F7EBE8;
 }
 .page-nos-realisations .gallerie {
-  max-width: 2000px;
-  padding-inline: 2vw;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: center;
   gap: 2rem;
+  padding-inline: 2rem;
 }
-.page-nos-realisations .gallerie li {
-  margin-top: 5vh;
+.page-nos-realisations .gallerie a {
+  margin-top: 4vh;
 }
-.page-nos-realisations .gallerie li h3 {
+.page-nos-realisations .gallerie a h3 {
   margin: 1vh 0;
   font-weight: bold;
   font-size: 3vh;
 }
-.page-nos-realisations .gallerie li img {
-  max-width: 600px;
+.page-nos-realisations .gallerie a img {
   border-radius: 20px;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page-nos-realisations .gallerie a img:hover {
+  filter: drop-shadow(0 0px 10px #cc7173);
 }
 
 .contact {

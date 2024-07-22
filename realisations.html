@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/lightbox.css">
     <title>Stand's Story</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo"><img src="img/logo/logo-simple-blanc.png" alt="logo-accueil"></div>
+            <div class="logo"><img src="/assets/logo/logo-simple-blanc.png" alt="logo-accueil"></div>
             <ul>
                 <li><a class="navigation" href="index.html">ACCUEIL</a></li>
                 <li><a class="navigation" href="solutions.html">SOLUTIONS D'EXPOSITION</a></li>
@@ -37,48 +38,48 @@
                 <button>de 50m² à 100m²</button>
                 <button>+ de 100m²</button>
             </div>
-            <ul class="gallerie">
-                <li>
-                    <img src="img/stands/jallatte.jpg" alt="Jallatte">
+            <div class="gallerie">
+                <a href="/assets/stands/jallatte.jpg" data-lightbox="stands" data-title="JALLATTE - 42m²">
+                    <img src="/assets/stands/jallatte.jpg" alt="Jallatte">
                     <h3>JALLATTE - 42m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> PREVENTICA - Toulouse</p>
-                </li>
-                <li>
-                    <img src="img/stands/upower.jpg" alt="U-Power">
+                </a>
+                <a href="/assets/stands/upower.jpg" data-lightbox="stands" data-title="U-Power - 36m²">
+                    <img src="/assets/stands/upower.jpg" alt="U-Power">
                     <h3>U-Power - 36m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> PREVENTICA - Toulouse</p>
-                </li>
-                <li>
-                    <img src="img/stands/jeeper.jpg" alt="Jeeper">
+                </a>
+                <a href="/assets/stands/jeeper.jpg" data-lightbox="stands" data-title="U-Power - 36m²">
+                    <img src="/assets/stands/jeeper.jpg" alt="Jeeper">
                     <h3>JEEPER - 36m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> SIRHA - Lyon</p>
-                </li>
-                <li>
-                    <img src="img/stands/kokiriki.jpg" alt="Kokiriki">
+                </a>
+                <a href="/assets/stands/kokiriki.jpg" data-lightbox="stands" data-title="U-Power - 36m²">
+                    <img src="/assets/stands/kokiriki.jpg" alt="Kokiriki">
                     <h3>KOKIRIKI - 52m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> SIAL - Paris</p>
-                </li>
-                <li>
-                    <img src="img/stands/lma.JPG" alt="LMA">
+                </a>
+                <a href="/assets/stands/lma.JPG" data-lightbox="stands" data-title="U-Power - 36m²">
+                    <img src="/assets/stands/lma.JPG" alt="LMA">
                     <h3>LMA - 72m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> EXPO PROTECTION - Paris</p>
-                </li>
-                <li>
-                    <img src="img/stands/sfe.jpg" alt="SFE">
+                </a>
+                <a href="/assets/stands/sfe.jpg" data-lightbox="stands" data-title="U-Power - 36m²">
+                    <img src="/assets/stands/sfe.jpg" alt="SFE">
                     <h3>SFE - 107m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> SIRHA - Lyon Eurexpo</p>
-                </li>
-                <li>
-                    <img src="img/stands/pellenc.jpg" alt="Pellenc">
+                </a>
+                <a href="/assets/stands/pellenc.jpg" data-lightbox="stands" data-title="U-Power - 36m²">
+                    <img src="/assets/stands/pellenc.jpg" alt="Pellenc">
                     <h3>PELLENC ST - 136m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> POLLUTEC - Lyon Eurexpo</p>
-                </li>
+                </a>
             </ul>
         </section>
     </main>
     <footer>
         <div class="foot-top">
-            <div class="logo_bot"><img src="img/logo/logo-simple-blanc.png" alt="logo-simple"></div>
+            <div class="logo_bot"><img src="/assets/logo/logo-simple-blanc.png" alt="logo-simple"></div>
             <div class="infos">
                 <h3>AGENCE STAND'S STORY</h3>
                 <p>FLEURINE MERLEY</p>
@@ -88,8 +89,8 @@
             </div>
             <div class="follow">
                 <p>Suivez-nous sur :</p>
-                <img src="img/icons/linkedin.png" alt="linkedin">
-                <img src="img/icons/instagram.png" alt="instagram">
+                <img src="/assets/icons/linkedin.png" alt="linkedin">
+                <img src="/assets/icons/instagram.png" alt="instagram">
             </div>
         </div>
         <div class="foot-bot">
@@ -99,6 +100,7 @@
     </footer>
 </body>
 
-<script src="navbar.js"></script>
+<script src="/scripts/lightbox-plus-jquery.js"></script>
+<script src="/scripts/script.js"></script>
 <script src="https://kit.fontawesome.com/411b519271.js" crossorigin="anonymous"></script>
 </html>
