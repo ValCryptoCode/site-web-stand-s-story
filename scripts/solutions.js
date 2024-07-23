@@ -25,9 +25,9 @@ function updateConnections() {
     connectBubbles(bulle2, bulle3);
     connectBubbles(bulle3, bulle4);
     connectBubbles(bulle5, bulle6);
-    connectBubbles(bulle6, bulle7);
-    connectBubbles(bulle6, bulle8);
-    connectBubbles(bulle6, bulle9);
+    connectBubbles(bulle5, bulle7);
+    connectBubbles(bulle5, bulle8);
+    connectBubbles(bulle5, bulle9);
     connectBubbles(bulle10, bulle11);
     connectBubbles(bulle11, bulle12);
     connectBubbles(bulle12, bulle13);

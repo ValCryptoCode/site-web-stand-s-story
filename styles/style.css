@@ -259,12 +259,12 @@ footer .foot-bot {
 
 .titre-section {
   margin-top: 5vh;
-  padding: 1vmin 5vw;
+  padding: 1.5vmin 5vw;
   background: linear-gradient(90deg, rgb(204, 113, 115) 0%, rgb(247, 235, 232) 50%);
 }
 .titre-section h3 {
   display: inline;
-  font-size: clamp(1.2rem, 1.3vw, 1.5rem);
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
 
 .reverse {
@@ -452,6 +452,7 @@ html {
 }
 .bulles p {
   text-align: center;
+  padding-inline: 0.3rem;
 }
 
 .bulle-conseil {
@@ -480,11 +481,11 @@ html {
   grid-template-columns: repeat(7, 1fr);
 }
 .bulle-conception :nth-child(1) {
-  grid-column: 5/8;
+  grid-column: 2/5;
   grid-row: 1/4;
 }
 .bulle-conception :nth-child(2) {
-  grid-column: 2/4;
+  grid-column: 6/8;
   grid-row: 2/4;
 }
 .bulle-conception :nth-child(3) {
@@ -561,11 +562,17 @@ html {
   background-color: #F7EBE8;
   border: 0.3vw solid #984E52;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+}
+.minibulle svg {
+  width: 50%;
+  fill: #984E52;
 }
 
-.bubbles-section svg {
+.bubbles-section #svgContainer {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -581,7 +588,7 @@ html {
 
 .render {
   aspect-ratio: 3909/2375;
-  width: clamp(300px, 70vw, 2000px);
+  width: clamp(300px, 80vw, 2000px);
   margin: 10vh auto;
   border-radius: 20px;
   box-shadow: 0 0px 2rem #cc7173;
@@ -591,6 +598,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: end;
+  position: relative;
 }
 
 .alternate {
@@ -719,9 +727,10 @@ html {
 .contact {
   display: flex;
   justify-content: space-around;
-  margin: 5vh 0;
+  padding: 5vh 3vw;
 }
 .contact .left {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -731,6 +740,7 @@ html {
   margin: 2vh 0;
 }
 .contact .left h2 {
+  text-align: center;
   font-size: 4vh;
   font-family: "Caviar Dreams Bold";
 }
@@ -741,11 +751,8 @@ html {
   font-size: 2vh;
 }
 .contact .left img {
-  width: 20vw;
+  width: 70%;
   padding: 3vmin;
-}
-.contact .right {
-  align-content: center;
 }
 .contact .right form {
   display: flex;
@@ -755,21 +762,21 @@ html {
   outline: 2px solid #984E52;
 }
 .contact .right form .np {
-  display: inline;
+  display: flex;
+  gap: 0.7rem;
 }
 .contact .right input[type=text], .contact .right textarea, .contact .right input[type=email], .contact .right input[type=tel] {
-  padding: 12px;
+  padding: 0.8rem;
   border: none;
   background-color: #F7EBE8;
   border-radius: 10px;
   resize: vertical;
-  margin: 2vmin 100px;
+  margin: 2vmin 0;
   font-size: 2vh;
   color: #984E52;
+  width: 100%;
 }
 .contact .right input[type=submit] {
-  width: 7vw;
-  height: 3vh;
   margin: auto;
   background-color: #CC7173;
   border-radius: 10px;
@@ -777,6 +784,7 @@ html {
   color: #F7EBE8;
   font-weight: bold;
   font-size: 2vh;
+  padding: 0.5rem 1rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -785,6 +793,23 @@ html {
   }
   .toggle-btn-menu {
     display: block;
+  }
+  .section-3D .render {
+    margin-bottom: 15vh;
+  }
+  .section-3D .slider-button {
+    position: absolute;
+    bottom: -4rem;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact .np {
+    flex-direction: row;
+    width: 100%;
+  }
+  .contact .left {
+    width: 100%;
   }
   footer .foot-top {
     flex-direction: column;
