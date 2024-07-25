@@ -281,7 +281,6 @@ footer{
         align-items: center;
 
         .logo_bot {
-            width: 30%;
             display: flex;
             justify-content: center;
 
@@ -294,7 +293,6 @@ footer{
         .infos {
 
             text-align: center;
-            width: 30%;
 
             p, h3, a {
                 margin: 5px;
@@ -303,9 +301,7 @@ footer{
 
         .follow {
             text-align: center;
-            width: 30%;
             display: flex;
-            justify-content: center;
             align-items: center;
 
             p {
@@ -313,7 +309,11 @@ footer{
             }
 
             img {
-                width: 30px;
+                height: 100%;
+            }
+
+            a {
+                height: 30px;
                 margin: 0 5px;
             }
         }
@@ -358,12 +358,6 @@ footer{
     .texte {
         width: 100%;
 
-        h2 {
-            font-size: $--fs-extralarge;
-            margin: 2vh 0;
-            color: $pink;
-        }
-
         p {
             width: 60%;
             color: $pink-dark;
@@ -373,6 +367,27 @@ footer{
             padding-block: min(3vh,3rem);
         }
     }
+}
+
+.titre-dix-ans {
+    position: relative;
+
+    h2 {
+        font-size: clamp(3rem,4vw,5rem);
+        margin: 2vh 0;
+        color: $pink;
+    }
+
+    // h3 {
+    //     font-size: 6rem;
+    //     font-family: 'Brittany Signature';
+    //     border: 2px solid blue;
+
+
+    //     position: absolute;
+    //     top: 0;
+    //     left: 5rem;
+    // }
 }
 
 .references {
@@ -392,7 +407,8 @@ footer{
         display: flex;
         justify-content: space-around;
         margin: 10vh auto;
-        align-items: center;
+        padding-inline: 2vw;
+        align-items: start;
 
         
         li {
@@ -408,57 +424,30 @@ footer{
             &:hover .svg {
                 fill: $pink-light;
                 transition: 0.2s ease-in-out;
-                width: 10vw;
-                height: 10vw;
             }
 
             &:hover .titre-anime {
                 filter: drop-shadow(1px 3px 5px rgba($pink-dark, 0.6));
-                font-size: 3vmin;
+                font-size: calc(max($--fs-large, 1.5vw) * 1.2);
                 transition: 0.2s ease-in-out;
-            }
-
-            .rond {
-                background-color: $pink-light;
-                border: 0.3vw solid $pink-dark;
-                padding: 3vw;
-                border-radius: 50%;
-                transition: 0.2s ease-in-out;
-                
-                img {
-                    width: 8vw;
-                }
-
-                svg {
-                    width: 8vw;
-                    height: 8vw;
-                    fill: $pink-dark;
-                    filter: drop-shadow(5px 5px 3px rgba($pink-dark, 0.4));
-                    transition: 0.2s ease-in-out;
-                    
-                }
             }
 
             h4 {
-                font-size: 2.5vmin;
-                margin: 1vh;
+                font-size: max($--fs-large, 1.5vw);
+                margin-block: 1vh;
                 color: $pink-dark;
                 transition: 0.2s ease-in-out;
             }
         }
             
-        li:nth-child(2) {
+        li:nth-child(2), li:nth-child(4) {
             align-self: end;
-        }
-
-        li:nth-child(3) {
-            align-self: start;
         }
     }
 
     .connection {
         stroke: $pink-dark;
-        stroke-width: 1vw;
+        stroke-width: max(1vw,10px);
         stroke-linecap: round;
         stroke-linejoin: round;
     }
@@ -472,8 +461,29 @@ footer{
         }
 }
 
+.rond {
+    background-color: $pink-light;
+    border: max(0.3vw, 4px) solid $pink-dark;
+    padding: 3vw;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    
+    img {
+        width: 8vw;
+    }
+
+    svg {
+        width: 8vw;
+        aspect-ratio: 1;
+        fill: $pink-dark;
+        filter: drop-shadow(5px 5px 3px rgba($pink-dark, 0.4));
+        transition: 0.2s ease-in-out;
+        
+    }
+}
+
 .realisations {
-    background-image: url('/assets/logo/ressort\ tapisserie.jpg');
+    background-image: url('/assets/illustrations/ressortsPink.jpg');
     background-size: contain;
     display: flex;
     justify-content: center;
@@ -957,15 +967,36 @@ html {
 // ----- MEDIA QUERIES ----- //
 
 @media screen and (max-width: 700px) {
-
+    
     .navbar ul {
         display: none;
     }
-
+    
     .toggle-btn-menu {
         display: block;
     }
 
+    .cle-en-main {
+
+        ul {
+        flex-direction: column;
+        height: 100%;
+
+            li {
+                flex-direction: row-reverse;
+
+                h4 {
+                    padding-inline: 2vw;
+                }
+            }
+        }
+        
+        .rond svg {
+            width: 20vw;
+            padding-block: 1vw;
+        }
+    }
+    
     .section-3D {
         .render {
             margin-bottom: 15vh;
@@ -991,7 +1022,6 @@ html {
 
     footer .foot-top {
         flex-direction: column;
-
         .infos {
             padding-block: 2rem;
             width: 100%;
@@ -1001,12 +1031,14 @@ html {
         .follow {
             width: 100%;
             padding-bottom: 2rem;
+            justify-content: center;
         }
     }
 
     footer .foot-bot {
         flex-direction: column;
     }
+
 
 }
 
@@ -1015,4 +1047,12 @@ html {
     .dix-ans .texte p{
         width: 100%;
     }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .rond svg {
+        width: 12vw;
+    }
+    
 }

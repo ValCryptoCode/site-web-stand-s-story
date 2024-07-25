@@ -223,7 +223,6 @@ footer .foot-top {
   align-items: center;
 }
 footer .foot-top .logo_bot {
-  width: 30%;
   display: flex;
   justify-content: center;
 }
@@ -233,23 +232,23 @@ footer .foot-top .logo_bot img {
 }
 footer .foot-top .infos {
   text-align: center;
-  width: 30%;
 }
 footer .foot-top .infos p, footer .foot-top .infos h3, footer .foot-top .infos a {
   margin: 5px;
 }
 footer .foot-top .follow {
   text-align: center;
-  width: 30%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 footer .foot-top .follow p {
   margin: 0 5px;
 }
 footer .foot-top .follow img {
-  width: 30px;
+  height: 100%;
+}
+footer .foot-top .follow a {
+  height: 30px;
   margin: 0 5px;
 }
 footer .foot-bot {
@@ -285,11 +284,6 @@ footer .foot-bot {
 .dix-ans .texte {
   width: 100%;
 }
-.dix-ans .texte h2 {
-  font-size: 3rem;
-  margin: 2vh 0;
-  color: #CC7173;
-}
 .dix-ans .texte p {
   width: 60%;
   color: #984E52;
@@ -297,6 +291,15 @@ footer .foot-bot {
   text-align: justify;
   font-family: "TT Chocolade";
   padding-block: min(3vh, 3rem);
+}
+
+.titre-dix-ans {
+  position: relative;
+}
+.titre-dix-ans h2 {
+  font-size: clamp(3rem, 4vw, 5rem);
+  margin: 2vh 0;
+  color: #CC7173;
 }
 
 .references {
@@ -314,7 +317,8 @@ footer .foot-bot {
   display: flex;
   justify-content: space-around;
   margin: 10vh auto;
-  align-items: center;
+  padding-inline: 2vw;
+  align-items: start;
 }
 .cle-en-main ul li {
   display: flex;
@@ -328,46 +332,24 @@ footer .foot-bot {
 .cle-en-main ul li:hover .svg {
   fill: #F7EBE8;
   transition: 0.2s ease-in-out;
-  width: 10vw;
-  height: 10vw;
 }
 .cle-en-main ul li:hover .titre-anime {
   filter: drop-shadow(1px 3px 5px rgba(152, 78, 82, 0.6));
-  font-size: 3vmin;
-  transition: 0.2s ease-in-out;
-}
-.cle-en-main ul li .rond {
-  background-color: #F7EBE8;
-  border: 0.3vw solid #984E52;
-  padding: 3vw;
-  border-radius: 50%;
-  transition: 0.2s ease-in-out;
-}
-.cle-en-main ul li .rond img {
-  width: 8vw;
-}
-.cle-en-main ul li .rond svg {
-  width: 8vw;
-  height: 8vw;
-  fill: #984E52;
-  filter: drop-shadow(5px 5px 3px rgba(152, 78, 82, 0.4));
+  font-size: calc(max(1.5rem, 1.5vw) * 1.2);
   transition: 0.2s ease-in-out;
 }
 .cle-en-main ul li h4 {
-  font-size: 2.5vmin;
-  margin: 1vh;
+  font-size: max(1.5rem, 1.5vw);
+  margin-block: 1vh;
   color: #984E52;
   transition: 0.2s ease-in-out;
 }
-.cle-en-main ul li:nth-child(2) {
+.cle-en-main ul li:nth-child(2), .cle-en-main ul li:nth-child(4) {
   align-self: end;
-}
-.cle-en-main ul li:nth-child(3) {
-  align-self: start;
 }
 .cle-en-main .connection {
   stroke: #984E52;
-  stroke-width: 1vw;
+  stroke-width: max(1vw, 10px);
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -379,8 +361,26 @@ footer .foot-bot {
   z-index: -1;
 }
 
+.rond {
+  background-color: #F7EBE8;
+  border: max(0.3vw, 4px) solid #984E52;
+  padding: 3vw;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+.rond img {
+  width: 8vw;
+}
+.rond svg {
+  width: 8vw;
+  aspect-ratio: 1;
+  fill: #984E52;
+  filter: drop-shadow(5px 5px 3px rgba(152, 78, 82, 0.4));
+  transition: 0.2s ease-in-out;
+}
+
 .realisations {
-  background-image: url("/assets/logo/ressort tapisserie.jpg");
+  background-image: url("/assets/illustrations/ressortsPink.jpg");
   background-size: contain;
   display: flex;
   justify-content: center;
@@ -794,6 +794,20 @@ html {
   .toggle-btn-menu {
     display: block;
   }
+  .cle-en-main ul {
+    flex-direction: column;
+    height: 100%;
+  }
+  .cle-en-main ul li {
+    flex-direction: row-reverse;
+  }
+  .cle-en-main ul li h4 {
+    padding-inline: 2vw;
+  }
+  .cle-en-main .rond svg {
+    width: 20vw;
+    padding-block: 1vw;
+  }
   .section-3D .render {
     margin-bottom: 15vh;
   }
@@ -821,6 +835,7 @@ html {
   footer .foot-top .follow {
     width: 100%;
     padding-bottom: 2rem;
+    justify-content: center;
   }
   footer .foot-bot {
     flex-direction: column;
@@ -829,5 +844,10 @@ html {
 @media screen and (max-width: 1100px) {
   .dix-ans .texte p {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .rond svg {
+    width: 12vw;
   }
 }/*# sourceMappingURL=style.css.map */
