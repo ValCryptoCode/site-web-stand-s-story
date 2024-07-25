@@ -287,7 +287,7 @@ footer .foot-bot {
 .dix-ans .texte p {
   width: 60%;
   color: #984E52;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
   text-align: justify;
   font-family: "TT Chocolade";
   padding-block: min(3vh, 3rem);
@@ -398,17 +398,19 @@ footer .foot-bot {
   filter: drop-shadow(0 0 3px rgba(152, 78, 82, 0.5));
 }
 .realisations button:active svg {
-  fill: #CC7173;
+  fill: #984E52;
 }
 .realisations button svg {
-  fill: #984E52;
+  fill: #CC7173;
+  width: clamp(20px, 3vw, 100px);
 }
 .realisations .left {
   transform: rotate(180deg);
 }
 .realisations a {
-  width: 70vw;
-  height: 70vh;
+  aspect-ratio: 3909/2375;
+  width: clamp(300px, 80vw, 2000px);
+  max-height: 80vh;
   position: relative;
   filter: drop-shadow(0 0 1rem #cc7173);
 }
@@ -436,7 +438,7 @@ html {
 
 .bubbles-section {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .bulles {
@@ -589,6 +591,7 @@ html {
 .render {
   aspect-ratio: 3909/2375;
   width: clamp(300px, 80vw, 2000px);
+  max-height: 80vh;
   margin: 10vh auto;
   border-radius: 20px;
   box-shadow: 0 0px 2rem #cc7173;
@@ -698,19 +701,20 @@ html {
   color: #F7EBE8;
 }
 .page-nos-realisations .gallerie {
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(max(25vw, 300px), 1fr));
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   padding-inline: 2rem;
 }
 .page-nos-realisations .gallerie a {
-  margin-top: 4vh;
+  color: #984E52;
 }
 .page-nos-realisations .gallerie a h3 {
   margin: 1vh 0;
   font-weight: bold;
-  font-size: 3vh;
+  font-size: 1.2rem;
 }
 .page-nos-realisations .gallerie a img {
   border-radius: 20px;
