@@ -96,15 +96,24 @@
                 <h3 class="txt-pinkdark coco-bold-italic">RÉALISATIONS</h3>
             </div>
             <div class="realisations">
-                <button class="left"><svg viewBox="0 0 52.93 45.43"><path d="m26.37,19.06L8.82,1.51c-2.02-2.02-5.29-2.02-7.31,0C-.5,3.53-.5,6.8,1.51,8.82l13.89,13.89L1.51,36.6c-2.02,2.02-2.02,5.29,0,7.31,1.01,1.01,2.33,1.51,3.65,1.51s2.65-.51,3.65-1.51l17.54-17.54c2.02-2.02,2.02-5.29,0-7.31Z"/><path d="m51.42,19.06L33.87,1.51c-2.02-2.02-5.29-2.02-7.31,0-2.02,2.02-2.02,5.29,0,7.31l13.89,13.89-13.89,13.89c-2.02,2.02-2.02,5.29,0,7.31,1.01,1.01,2.33,1.51,3.65,1.51s2.65-.51,3.66-1.51l17.54-17.54c2.02-2.02,2.02-5.29,0-7.31Z"/></svg></button>
-                <a href="#">
-                    <img src="/assets/stands/pellenc.jpg" alt="pellenc">
+                <button class="left" onclick="previousSlide()">
+                    <svg viewBox="0 0 52.93 45.43"><path d="m26.37,19.06L8.82,1.51c-2.02-2.02-5.29-2.02-7.31,0C-.5,3.53-.5,6.8,1.51,8.82l13.89,13.89L1.51,36.6c-2.02,2.02-2.02,5.29,0,7.31,1.01,1.01,2.33,1.51,3.65,1.51s2.65-.51,3.65-1.51l17.54-17.54c2.02-2.02,2.02-5.29,0-7.31Z"/><path d="m51.42,19.06L33.87,1.51c-2.02-2.02-5.29-2.02-7.31,0-2.02,2.02-2.02,5.29,0,7.31l13.89,13.89-13.89,13.89c-2.02,2.02-2.02,5.29,0,7.31,1.01,1.01,2.33,1.51,3.65,1.51s2.65-.51,3.66-1.51l17.54-17.54c2.02-2.02,2.02-5.29,0-7.31Z"/></svg>
+                </button>
+                <div class="caroussel">
+                    <img src="/assets/stands/pellenc.jpg" alt="pellenc" class="fade-in-out">
+                    <img src="/assets/stands/lma.JPG" alt="lma" class="fade-in-out">
+                    <img src="/assets/stands/kokiriki.jpg" alt="kokiriki" class="fade-in-out">
+                    <img src="/assets/stands/sfe.jpg" alt="sfe" class="fade-in-out">
+                    <img src="/assets/stands/jeeper.jpg" alt="jeeper" class="fade-in-out">
+                    <img src="/assets/stands/upower.jpg" alt="upower" class="fade-in-out">
                     <div class="legende">
                         <h3>PELLENC ST - 136m²</h3>
                         <p>POLLUTEC - Lyon Eurexpo</p>
                     </div>
-                </a>
-                <button><svg viewBox="0 0 52.93 45.43"><path d="m26.37,19.06L8.82,1.51c-2.02-2.02-5.29-2.02-7.31,0C-.5,3.53-.5,6.8,1.51,8.82l13.89,13.89L1.51,36.6c-2.02,2.02-2.02,5.29,0,7.31,1.01,1.01,2.33,1.51,3.65,1.51s2.65-.51,3.65-1.51l17.54-17.54c2.02-2.02,2.02-5.29,0-7.31Z"/><path d="m51.42,19.06L33.87,1.51c-2.02-2.02-5.29-2.02-7.31,0-2.02,2.02-2.02,5.29,0,7.31l13.89,13.89-13.89,13.89c-2.02,2.02-2.02,5.29,0,7.31,1.01,1.01,2.33,1.51,3.65,1.51s2.65-.51,3.66-1.51l17.54-17.54c2.02-2.02,2.02-5.29,0-7.31Z"/></svg></button>
+                </div>
+                <button onclick="nextSlide()">
+                    <svg viewBox="0 0 52.93 45.43"><path d="m26.37,19.06L8.82,1.51c-2.02-2.02-5.29-2.02-7.31,0C-.5,3.53-.5,6.8,1.51,8.82l13.89,13.89L1.51,36.6c-2.02,2.02-2.02,5.29,0,7.31,1.01,1.01,2.33,1.51,3.65,1.51s2.65-.51,3.65-1.51l17.54-17.54c2.02-2.02,2.02-5.29,0-7.31Z"/><path d="m51.42,19.06L33.87,1.51c-2.02-2.02-5.29-2.02-7.31,0-2.02,2.02-2.02,5.29,0,7.31l13.89,13.89-13.89,13.89c-2.02,2.02-2.02,5.29,0,7.31,1.01,1.01,2.33,1.51,3.65,1.51s2.65-.51,3.66-1.51l17.54-17.54c2.02-2.02,2.02-5.29,0-7.31Z"/></svg>
+                </button>
             </div>
         </section>
     </main>
@@ -131,6 +140,7 @@
         </div>
     </footer>
 
+<script src="/scripts/caroussel.js"></script>
 <script src="/scripts/script.js"></script>
 <script src="/scripts/navbar.js"></script>
 <script src="https://kit.fontawesome.com/411b519271.js" crossorigin="anonymous"></script>
