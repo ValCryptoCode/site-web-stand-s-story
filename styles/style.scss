@@ -350,13 +350,20 @@ footer{
     max-width: 1500px;
     margin: auto;
 
-    background-image: url(/assets/logo/fond-pink-light.png);
+    background-image: url(/assets/illustrations/backgroundStandPinklight.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
 
     .texte {
         width: 100%;
+
+        svg {
+            width: max(200px, 15vw);
+
+            .cls-1{fill:#984e52;}
+            .cls-2{fill:url(#degradePinkToPinklight);}
+        }
 
         p {
             width: 60%;
@@ -367,27 +374,6 @@ footer{
             padding-block: min(3vh,3rem);
         }
     }
-}
-
-.titre-dix-ans {
-    position: relative;
-
-    h2 {
-        font-size: clamp(3rem,4vw,5rem);
-        margin: 2vh 0;
-        color: $pink;
-    }
-
-    // h3 {
-    //     font-size: 6rem;
-    //     font-family: 'Brittany Signature';
-    //     border: 2px solid blue;
-
-
-    //     position: absolute;
-    //     top: 0;
-    //     left: 5rem;
-    // }
 }
 
 .references {
@@ -518,7 +504,7 @@ footer{
 
 .caroussel {
     aspect-ratio: 16 / 9;
-    width: clamp(300px, 80vw, 2000px);
+    width: clamp(300px, 70vw, 2000px);
     position: relative;
     filter: drop-shadow( 0 0 1rem rgba($pink, 1));
 
@@ -527,6 +513,8 @@ footer{
         height: 100%;
         border-radius: 25px;
         object-fit: cover;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
     }
 
     .legende {
@@ -535,23 +523,13 @@ footer{
         right: 2vw;
 
         h3,p {
+            font-size: clamp($--fs-medium,1.5vw,$--fs-large);
             color: $pink-light;
             text-align: center;
-            filter: drop-shadow(0 0 10px rgba($pink-light, 1));
+            filter: drop-shadow(2px 2px 5px rgba(black, 1));
         }
     }
 }
-
-// .fade-in-out {
-//     opacity: 0;
-//     transition: opacity 0.5s ease-in-out;
-// }
-
-// .appear-in-out {
-//     opacity: 1;
-//     transition: opacity 0.5s ease-in-out;
-
-// }
 
 
 // ----- PAGE SOLUTIONS D'EXPOSITIONS ----- //

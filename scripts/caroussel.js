@@ -14,16 +14,16 @@ const captions = [
 function showSlide(slideIndex) {
     slides.forEach((slide, index) => {
         slide.style.display = index === slideIndex ? 'block' : 'none';
-        slide.classList.toggle('fade-in-out', index === slideIndex);
+//        slide.classList.toggle('appear-in-out', index === slideIndex);
     });
     updateCaption(slideIndex);
 }
 
 function nextSlide() {
-    // slides[currentSlide].classList.add('fade-in-out');
-    // slides[currentSlide].classList.remove('appear-in-out');
+//    slides[currentSlide].classList.remove('appear-in-out');
+//   setInterval(1);
     currentSlide = (currentSlide + 1) % slides.length;
-    // slides[currentSlide].classList.add('appear-in-out');
+//    slides[currentSlide].classList.add('appear-in-out');
     showSlide(currentSlide);
 }
 
