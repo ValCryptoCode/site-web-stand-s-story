@@ -14,23 +14,19 @@ const captions = [
 function showSlide(slideIndex) {
     slides.forEach((slide, index) => {
         slide.style.display = index === slideIndex ? 'block' : 'none';
-//        slide.classList.toggle('appear-in-out', index === slideIndex);
+        slide.style.opacity = index === slideIndex ? 1 : 0;
     });
     updateCaption(slideIndex);
 }
 
 function nextSlide() {
-//    slides[currentSlide].classList.remove('appear-in-out');
-//   setInterval(1);
     currentSlide = (currentSlide + 1) % slides.length;
 //    slides[currentSlide].classList.add('appear-in-out');
     showSlide(currentSlide);
 }
 
 function previousSlide() {
-    // slides[currentSlide].classList.remove('fade-in-out');
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    // slides[currentSlide].classList.add('appear-in-out');
     showSlide(currentSlide);
 }
 

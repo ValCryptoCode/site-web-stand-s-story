@@ -6,13 +6,15 @@
 }
 
 @font-face {
-    font-family: 'Caviar Dreams Bold';
+    font-family: 'Caviar Dreams';
     src: url('/fonts/CaviarDreams_Bold.ttf') format('truetype');
+    font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Caviar Dreams Italic';
+    font-family: 'Caviar Dreams';
     src: url('/fonts/CaviarDreams_Italic.ttf') format('truetype');
+    font-style: italic;
 }
 
 @font-face {
@@ -32,7 +34,14 @@
 
 @font-face {
     font-family: 'TT Chocolade';
-    src: url('/fonts/TT\ Chocolates\ Trial\ Medium.otf') format('truetype');
+    src: url('/fonts/TT\ Chocolates\ Trial\ Regular.otf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TT Chocolade';
+    src: url('/fonts/TT\ Chocolates\ Trial\ Bold.otf') format('truetype');
+    font-weight: bold;
 }
 
 
@@ -95,7 +104,8 @@ nav, footer, nav a, footer a {
 }
 
 .caviar-bold {
-    font-family: 'Caviar Dreams Bold';
+    font-family: 'Caviar Dreams';
+    font-weight: bold;
 }
 
 .coco-bold-italic {
@@ -151,7 +161,7 @@ header {
         }
 
         h2 {
-            font-family: 'Caviar Dreams Italic';
+            font-style: italic;
             font-size: clamp($--fs-medium, 1.5vw, $--fs-extralarge);
         }
     }
@@ -190,7 +200,7 @@ header {
 
         li {
             a {
-                font-family: 'Caviar Dreams Bold';
+                font-weight: bold;
                 font-size: clamp($--fs-small, .8vw, $--fs-medium);
                 text-shadow: 2px 3px 8px rgb(48, 48, 48);
                 transition: 0.2s ease-in-out;
@@ -252,7 +262,7 @@ header {
     backdrop-filter: blur(15px);
 
     a {
-        font-family: 'Caviar Dreams Bold';
+        font-weight: bold;
         color: $pink;
         font-size: $--fs-medium;
         text-shadow: 0px 0px 5px $pink-light;
@@ -378,10 +388,55 @@ footer{
 
 .references {
     width: 100%;
+}
 
-    .map {
-        height: 800px;
+.map {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.map-france, .map-europe {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+
+    img {
+        flex: 1;
+        width: 100%;
+        max-height: 500px;
+        object-fit: contain;
+    }
+}
+
+.liste-salons-reverse {
+    justify-content: end;
+}
+
+.liste-salons {
+    flex:1;
+
+    b {
+        font-family: 'TT Chocolade';
+    }
+
+    h3 {
+        display: inline-block;
+        font-family: 'TT Chocolade';
+
+        background-color: $pink-dark;
+        color: $pink-light;
+        font-size: $--fs-large;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 25px;
+    }
+
+    li {        
+        font-family: 'TT Chocolade';
+        font-size: $--fs-large;
+        padding: .5rem 0;
     }
 }
 
@@ -513,7 +568,6 @@ footer{
         height: 100%;
         border-radius: 25px;
         object-fit: cover;
-        opacity: 1;
         transition: opacity 0.5s ease-in-out;
     }
 
@@ -894,7 +948,7 @@ html {
         h2 {
             text-align: center;
             font-size: 4vh;
-            font-family: 'Caviar Dreams Bold';
+            font-weight: bold;
         }
 
         h3 {

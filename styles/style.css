@@ -3,12 +3,14 @@
   src: url("/fonts/CaviarDreams.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Caviar Dreams Bold";
+  font-family: "Caviar Dreams";
   src: url("/fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: bold;
 }
 @font-face {
-  font-family: "Caviar Dreams Italic";
+  font-family: "Caviar Dreams";
   src: url("/fonts/CaviarDreams_Italic.ttf") format("truetype");
+  font-style: italic;
 }
 @font-face {
   font-family: "Brittany Signature";
@@ -24,7 +26,13 @@
 }
 @font-face {
   font-family: "TT Chocolade";
-  src: url("/fonts/TT Chocolates Trial Medium.otf") format("truetype");
+  src: url("/fonts/TT Chocolates Trial Regular.otf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "TT Chocolade";
+  src: url("/fonts/TT Chocolates Trial Bold.otf") format("truetype");
+  font-weight: bold;
 }
 * {
   font-family: "Caviar Dreams", sans-serif;
@@ -65,7 +73,8 @@ nav, footer, nav a, footer a {
 }
 
 .caviar-bold {
-  font-family: "Caviar Dreams Bold";
+  font-family: "Caviar Dreams";
+  font-weight: bold;
 }
 
 .coco-bold-italic {
@@ -112,7 +121,7 @@ header {
   padding-inline: 1rem;
 }
 .welcome .home h2 {
-  font-family: "Caviar Dreams Italic";
+  font-style: italic;
   font-size: clamp(1.2rem, 1.5vw, 3rem);
 }
 .welcome .band {
@@ -144,7 +153,7 @@ header {
   justify-content: space-between;
 }
 .navbar ul li a {
-  font-family: "Caviar Dreams Bold";
+  font-weight: bold;
   font-size: clamp(1rem, 0.8vw, 1.2rem);
   text-shadow: 2px 3px 8px rgb(48, 48, 48);
   transition: 0.2s ease-in-out;
@@ -198,7 +207,7 @@ header {
           backdrop-filter: blur(15px);
 }
 .dropdown-menu a {
-  font-family: "Caviar Dreams Bold";
+  font-weight: bold;
   color: #CC7173;
   font-size: 1.2rem;
   text-shadow: 0px 0px 5px #F7EBE8;
@@ -305,8 +314,51 @@ footer .foot-bot {
 .references {
   width: 100%;
 }
-.references .map {
-  height: 800px;
+
+.map {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map-france, .map-europe {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+}
+.map-france img, .map-europe img {
+  flex: 1;
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.liste-salons-reverse {
+  justify-content: end;
+}
+
+.liste-salons {
+  flex: 1;
+}
+.liste-salons b {
+  font-family: "TT Chocolade";
+}
+.liste-salons h3 {
+  display: inline-block;
+  font-family: "TT Chocolade";
+  background-color: #984E52;
+  color: #F7EBE8;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 25px;
+}
+.liste-salons li {
+  font-family: "TT Chocolade";
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
 }
 
 .cle-en-main {
@@ -420,7 +472,6 @@ footer .foot-bot {
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 .caroussel .legende {
@@ -749,7 +800,7 @@ html {
 .contact .left h2 {
   text-align: center;
   font-size: 4vh;
-  font-family: "Caviar Dreams Bold";
+  font-weight: bold;
 }
 .contact .left h3 {
   font-size: 3vh;
