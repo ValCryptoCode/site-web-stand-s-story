@@ -33,50 +33,51 @@
                 <h3 class="txt-pinkdark coco-bold-italic">REALISATIONS</h3>
             </div>
             <div class="btn">
-                <button class="selected">Tous</button>
-                <button>- de 50m²</button>
-                <button>de 50m² à 100m²</button>
-                <button>+ de 100m²</button>
+                <button id="sortAll" class="selected">Tous</button>
+                <button id="sortSmall">- de 50m²</button>
+                <button id="sortMedium">de 50m² à 100m²</button>
+                <button id="sortLarge">+ de 100m²</button>
             </div>
             <div class="gallerie">
-                <a href="/assets/stands/jallatte.jpg" data-lightbox="standjallatte" data-title="JALLATTE - 42m²">
+                <a href="/assets/stands/jallatte.jpg" data-lightbox="standjallatte" data-title="JALLATTE - 42m²" data-size="42">
                     <img src="/assets/stands/jallatte.jpg" alt="Stand Jallatte">
                     <h3>JALLATTE - 42m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> PREVENTICA - Toulouse</p>
                 </a>
-                <a href="/assets/stands/upower.jpg" data-lightbox="standupower" data-title="U-Power - 36m²">
+                <a href="/assets/stands/upower.jpg" data-lightbox="standupower" data-title="U-Power - 36m²" data-size="36">
                     <img src="/assets/stands/upower.jpg" alt="U-Power">
                     <h3>U-POWER - 36m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> PREVENTICA - Toulouse</p>
                 </a>
-                <a href="/assets/stands/jeeper.jpg" data-lightbox="standjeeper" data-title="JEEPER - 36m²">
+                <a href="/assets/stands/jeeper.jpg" data-lightbox="standjeeper" data-title="JEEPER - 36m²" data-size="36">
                     <img src="/assets/stands/jeeper.jpg" alt="Stand Jeeper">
                     <h3>JEEPER - 36m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> SIRHA - Lyon</p>
                 </a>
-                <a href="/assets/stands/kokiriki.jpg" data-lightbox="standkokiriki" data-title="KOKIRIKI - 52m²">
+                <a href="/assets/stands/kokiriki.jpg" data-lightbox="standkokiriki" data-title="KOKIRIKI - 52m²" data-size="52">
                     <img src="/assets/stands/kokiriki.jpg" alt="Stand Kokiriki">
                     <h3>KOKIRIKI - 52m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> SIAL - Paris</p>
                 </a>
-                <a href="/assets/stands/lma.JPG" data-lightbox="standlma" data-title="LMA - 72m²">
+                <a href="/assets/stands/lma.JPG" data-lightbox="standlma" data-title="LMA - 72m²" data-size="72">
                     <img src="/assets/stands/lma.JPG" alt="Stand LMA">
                     <h3>LMA - 72m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> EXPO PROTECTION - Paris</p>
                 </a>
-                <a href="/assets/stands/sfe.jpg" data-lightbox="standsfe" data-title="SFE - 107m²">
+                <a href="/assets/stands/sfe.jpg" data-lightbox="standsfe" data-title="SFE - 107m²" data-size="107">
                     <img src="/assets/stands/sfe.jpg" alt="Stand SFE">
                     <h3>SFE - 107m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> SIRHA - Lyon Eurexpo</p>
                 </a>
-                <a href="/assets/stands/pellenc.jpg" data-lightbox="standpellenc" data-title="PELLENC - 136m²">
+                <a href="/assets/stands/pellenc.jpg" data-lightbox="standpellenc" data-title="PELLENC - 136m²" data-size="136">
                     <img src="/assets/stands/pellenc.jpg" alt="Stand Pellenc">
                     <h3>PELLENC ST - 136m²</h3>
                     <p><i class="fa-solid fa-location-dot"></i> POLLUTEC - Lyon Eurexpo</p>
                 </a>
-                
+            </div>
+            <div class="gallerie-hidden">    
                 <!-- UPOWER -->
-                <a style="display: none;" href="/assets/stands/upower1.jpg" data-lightbox="standupower" data-title="U-Power - 36m²">
+                <a style="display: none ;" href="/assets/stands/upower1.jpg" data-lightbox="standupower" data-title="U-Power - 36m²">
                     <img src="/assets/stands/upower1.jpg" alt="Stand U-POWER">
                 </a>
                 <a style="display: none;" href="/assets/stands/upower2.jpg" data-lightbox="standupower" data-title="U-Power - 36m²">
@@ -187,6 +188,7 @@
     </footer>
 </body>
 
+<script src="scripts/sort.js"></script>
 <script src="/scripts/lightbox-plus-jquery.js"></script>
 <script src="/scripts/navbar.js"></script>
 <script src="https://kit.fontawesome.com/411b519271.js" crossorigin="anonymous"></script>

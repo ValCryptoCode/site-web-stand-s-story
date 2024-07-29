@@ -33,10 +33,10 @@ function updateConnections() {
     connectBubbles(bulle12, bulle13);
     connectBubbles(bulle14, bulle15);
     connectBubbles(bulle14, bulle16);
+    connectBubbles(bulle14, bulle19);
+    connectBubbles(bulle14, bulle20);
     connectBubbles(bulle16, bulle17);
-    connectBubbles(bulle17, bulle18);
-    connectBubbles(bulle17, bulle19);
-    connectBubbles(bulle19, bulle20);
+    connectBubbles(bulle18, bulle19);
 }
 
 window.onload = function() {
