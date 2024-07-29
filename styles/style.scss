@@ -533,14 +533,14 @@ footer{
     padding: 10vh 0;    
 
     button {
-        width: 50px;
-        height: 50px;
-        background-color: rgba(255, 255, 255, 0);
+        background-color: rgba(0, 0, 0, 0);
         border: none;
         margin-inline: 1vw;
+        cursor: pointer;
 
         &:hover svg {
             filter: drop-shadow(0 0 3px rgba($pink-dark, 0.5));
+            cursor: pointer;
         }
 
         &:active svg {
@@ -548,19 +548,15 @@ footer{
         }
         
         svg {
-            fill: $pink;
             width: clamp(20px,3vw,100px);
+            fill: $pink;
         }
     }    
-
-    .left {
-        transform: rotate(180deg);
-    }
 }
 
-.caroussel {
+.carousel {
     aspect-ratio: 16 / 9;
-    width: clamp(300px, 70vw, 2000px);
+    width: clamp(600px, 70vw, 2000px);
     position: relative;
     filter: drop-shadow( 0 0 1rem rgba($pink, 1));
 
@@ -574,6 +570,9 @@ footer{
 
     .legende {
         position: absolute;
+        background-color: rgba($pink-dark, $alpha: 0.75);
+        border-radius: 10px;
+        padding: .4rem;
         bottom: 2vh;
         right: 2vw;
 
@@ -581,7 +580,7 @@ footer{
             font-size: clamp($--fs-medium,1.5vw,$--fs-large);
             color: $pink-light;
             text-align: center;
-            filter: drop-shadow(2px 2px 5px rgba(black, 1));
+            //filter: drop-shadow(0 0 5px rgba($pink-light, .5));
         }
     }
 }
@@ -978,20 +977,26 @@ html {
 
         h2 {
             text-align: center;
-            font-size: 4vh;
+            font-size: clamp(20px,2vw,50px);
             font-weight: bold;
         }
 
         h3 {
-            font-size: 3vh;
+            font-size: clamp(16px,1.5vw,40px);
         }
 
-        h4 {
-            font-size: 2vh;
+        a {
+            color: $pink-dark;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: $pink;
+                transition: color .3s ease-in-out;
+            }
         }
 
         img {
-            width: 70%;
+            width: max(250px,50%);
             padding: 3vmin; 
         }
 
@@ -1022,7 +1027,7 @@ html {
             border-radius: 10px;
             resize: vertical;
             margin: 2vmin 0;
-            font-size: 2vh;
+            font-size: clamp(16px,1vw,25px);
             color: $pink-dark;
             width: 100%;
           }
@@ -1034,12 +1039,37 @@ html {
             border: none;
             color: $pink-light;
             font-weight: bold;
-            font-size: 2vh;
+            font-size: clamp(16px,1vw,25px);
             padding: .5rem 1rem;
+            transition: background-color .5s ease;
+
+            &:hover {
+                background-color: $pink-dark;
+                transition: background-color .5s ease;
+                cursor: pointer;
+            }
         }
     }
 }
 
+.mentions-legales {
+    padding: 4vw;
+
+    a {
+        color: $pink-dark;
+        text-decoration: underline;
+    }
+
+    h2 {
+        font-size: clamp(20px,2vw,40px);
+        margin-top: 2vw;
+    }
+
+    p {
+        font-size: clamp(16px, 1vw, 30px);
+        padding: max(.5vw,.5rem);
+    }
+}
 
 // ----- MEDIA QUERIES ----- //
 
@@ -1093,7 +1123,48 @@ html {
             display: none;
         }
     }
+
+    .realisations {
+        padding-top: 8vh;
+        position: relative;
+
+        button {
+            margin: 0;
+            position: absolute;
+            background-color: rgba($pink-dark, $alpha: 0.9);
+            border-radius: 100%;
+            padding: .5rem;
+
+            svg {
+                fill: $pink-light;
+            }
+        }
+
+        :nth-child(1) {
+            top: calc(50% - 20px);
+            left: 0;
+            z-index: 3;
+        }
+
+        :nth-child(3) {
+            top: calc(50% - 20px);
+            right: 0;
+            z-index: 3;
+        }
+    }
     
+    .carousel {
+        width: 90vw;
+        position: relative;
+
+        .legende {
+            position: absolute;
+            bottom: -2rem;
+            right: 1rem;
+            background: rgba($pink-dark, $alpha: .9);
+        }
+    }
+
     .section-3D {
         .render {
             margin-bottom: 15vh;

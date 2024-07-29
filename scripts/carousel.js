@@ -1,6 +1,6 @@
-const caroussel = document.querySelector('.caroussel');
+const carousel = document.querySelector('.carousel');
 let currentSlide = 0;
-const slides = caroussel.querySelectorAll('img');
+const slides = carousel.querySelectorAll('img');
 const captions = [
     { title: 'PELLENC ST - 136m²', description: 'POLLUTEC - Lyon Eurexpo' },
     { title: 'LMA - 72m²', description: 'EXPO PROTECTION - Paris' },
