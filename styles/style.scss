@@ -391,7 +391,7 @@ footer{
 }
 
 .map {
-    margin: 5rem;
+    margin: max(5vw,4rem) 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -399,23 +399,22 @@ footer{
 
 .map-france, .map-europe {
     display: flex;
-    justify-content: space-around;
-    gap: 5rem;
+    justify-content: center;
+    gap: 3vw;
+    padding-block: max(2vw,2rem);
 
     img {
-        flex: 1;
-        width: 100%;
-        max-height: 500px;
+        width: max(300px,25vw);
         object-fit: contain;
     }
 }
 
 .liste-salons-reverse {
-    justify-content: end;
+    margin: auto 0;
+    text-align: end;
 }
 
 .liste-salons {
-    flex:1;
 
     b {
         font-family: 'TT Chocolade';
@@ -423,20 +422,19 @@ footer{
 
     h3 {
         display: inline-block;
-        font-family: 'TT Chocolade';
 
         background-color: $pink-dark;
         color: $pink-light;
-        font-size: $--fs-large;
-        text-align: center;
-        padding: 1rem;
+        font-size: clamp(18px,1.5vw,40px);
+        padding: 1vw 3vw;
         border-radius: 25px;
+        margin-bottom: 2rem;
     }
 
     li {        
         font-family: 'TT Chocolade';
-        font-size: $--fs-large;
-        padding: .5rem 0;
+        font-size: clamp(14px,1.2vw, 30px);
+        padding-block: .5vw;
     }
 }
 
@@ -1020,6 +1018,12 @@ html {
     
     .toggle-btn-menu {
         display: block;
+    }
+
+    .map-france, .map-europe {
+        img {
+            width: 40vw;
+        }
     }
 
     .cle-en-main {

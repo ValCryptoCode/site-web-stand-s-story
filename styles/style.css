@@ -316,7 +316,7 @@ footer .foot-bot {
 }
 
 .map {
-  margin: 5rem;
+  margin: max(5vw, 4rem) 2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -324,41 +324,37 @@ footer .foot-bot {
 
 .map-france, .map-europe {
   display: flex;
-  justify-content: space-around;
-  gap: 5rem;
+  justify-content: center;
+  gap: 3vw;
+  padding-block: max(2vw, 2rem);
 }
 .map-france img, .map-europe img {
-  flex: 1;
-  width: 100%;
-  max-height: 500px;
+  width: max(300px, 25vw);
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .liste-salons-reverse {
-  justify-content: end;
+  margin: auto 0;
+  text-align: end;
 }
 
-.liste-salons {
-  flex: 1;
-}
 .liste-salons b {
   font-family: "TT Chocolade";
 }
 .liste-salons h3 {
   display: inline-block;
-  font-family: "TT Chocolade";
   background-color: #984E52;
   color: #F7EBE8;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1rem;
+  font-size: clamp(18px, 1.5vw, 40px);
+  padding: 1vw 3vw;
   border-radius: 25px;
+  margin-bottom: 2rem;
 }
 .liste-salons li {
   font-family: "TT Chocolade";
-  font-size: 1.5rem;
-  padding: 0.5rem 0;
+  font-size: clamp(14px, 1.2vw, 30px);
+  padding-block: 0.5vw;
 }
 
 .cle-en-main {
@@ -851,6 +847,9 @@ html {
   }
   .toggle-btn-menu {
     display: block;
+  }
+  .map-france img, .map-europe img {
+    width: 40vw;
   }
   .cle-en-main ul {
     flex-direction: column;
