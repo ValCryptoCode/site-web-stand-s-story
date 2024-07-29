@@ -626,6 +626,9 @@ html {
   width: 50%;
   fill: #984E52;
 }
+.minibulle img {
+  width: 20%;
+}
 
 .bubbles-section #svgContainer {
   width: 100%;
