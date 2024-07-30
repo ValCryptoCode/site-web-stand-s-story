@@ -566,6 +566,9 @@ footer{
         border-radius: 25px;
         object-fit: cover;
         transition: opacity 0.5s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .legende {
@@ -575,12 +578,13 @@ footer{
         padding: .4rem;
         bottom: 2vh;
         right: 2vw;
+        z-index: 2;
+        transition: opacity 0.5s ease-in-out;
 
         h3,p {
             font-size: clamp($--fs-medium,1.5vw,$--fs-large);
             color: $pink-light;
             text-align: center;
-            //filter: drop-shadow(0 0 5px rgba($pink-light, .5));
         }
     }
 }
@@ -1036,7 +1040,7 @@ html {
             width: 100%;
           }
 
-        input[type=submit]{
+        button {
             margin: auto;
             background-color: $pink;
             border-radius: 10px;
@@ -1144,13 +1148,13 @@ html {
             }
         }
 
-        :nth-child(1) {
+        .btn-left {
             top: calc(50% - 20px);
             left: 0;
             z-index: 3;
         }
 
-        :nth-child(3) {
+        .btn-right {
             top: calc(50% - 20px);
             right: 0;
             z-index: 3;

@@ -44,16 +44,17 @@
                 <img src="/assets/illustrations/contact.png" alt="contact">
             </div>
             <div class="right">
-                <form action="/action_page.php">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="b8036344-80d5-4658-b5b4-40ece341fb24">
                     <div class="np">
-                    <input type="text" id="nom" name="prenom" placeholder="Nom">
-                    <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                        <input type="text" id="nom" name="prenom" placeholder="Nom">
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom">
                     </div>
                     <input type="email" id="email" name="email" placeholder="Adresse Email">
                     <input type="tel" id="phone" name="phone" placeholder="Téléphone">
                     <input type="text" id="societe" name="societe" placeholder="Société">
                     <textarea id="subject" name="subject" placeholder="Décrivez nous votre demande" style="height:200px"></textarea>
-                    <input type="submit" value="ENVOYER">
+                    <button type="submit" value="ENVOYER">ENVOYER</button>
                 </form>
             </div>
         </section>

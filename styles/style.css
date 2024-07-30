@@ -466,6 +466,9 @@ footer .foot-bot {
   -o-object-fit: cover;
      object-fit: cover;
   transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .carousel .legende {
   position: absolute;
@@ -474,6 +477,8 @@ footer .foot-bot {
   padding: 0.4rem;
   bottom: 2vh;
   right: 2vw;
+  z-index: 2;
+  transition: opacity 0.5s ease-in-out;
 }
 .carousel .legende h3, .carousel .legende p {
   font-size: clamp(1.2rem, 1.5vw, 1.5rem);
@@ -862,7 +867,7 @@ html {
   color: #984E52;
   width: 100%;
 }
-.contact .right input[type=submit] {
+.contact .right button {
   margin: auto;
   background-color: #CC7173;
   border-radius: 10px;
@@ -873,7 +878,7 @@ html {
   padding: 0.5rem 1rem;
   transition: background-color 0.5s ease;
 }
-.contact .right input[type=submit]:hover {
+.contact .right button:hover {
   background-color: #984E52;
   transition: background-color 0.5s ease;
   cursor: pointer;
@@ -942,12 +947,12 @@ html {
   .realisations button svg {
     fill: #F7EBE8;
   }
-  .realisations :nth-child(1) {
+  .realisations .btn-left {
     top: calc(50% - 20px);
     left: 0;
     z-index: 3;
   }
-  .realisations :nth-child(3) {
+  .realisations .btn-right {
     top: calc(50% - 20px);
     right: 0;
     z-index: 3;

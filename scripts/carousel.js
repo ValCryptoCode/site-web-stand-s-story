@@ -8,20 +8,23 @@ const captions = [
     { title: 'SFE - 107m²', description: 'SIRHA - Lyon Eurexpo' },
     { title: 'JEEPER - 36m²', description: 'SIRHA - Lyon' },
     { title: 'U-POWER - 36m²', description: 'PREVENTICA - Toulouse' },
-    // Ajoutez d'autres légendes ici
 ];
 
 function showSlide(slideIndex) {
     slides.forEach((slide, index) => {
-        slide.style.display = index === slideIndex ? 'block' : 'none';
-        slide.style.opacity = index === slideIndex ? 1 : 0;
+        if (index === slideIndex) {
+            slide.style.opacity = 1;
+            slide.style.zIndex = 1;
+        } else {
+            slide.style.opacity = 0;
+            slide.style.zIndex = 0;
+        }
     });
     updateCaption(slideIndex);
 }
 
 function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
-//    slides[currentSlide].classList.add('appear-in-out');
     showSlide(currentSlide);
 }
 
@@ -38,8 +41,5 @@ function updateCaption(slideIndex) {
     `;
 }
 
-// Afficher la première image au chargement de la page
 showSlide(currentSlide);
-
-// Défilement automatique toutes les 3 secondes
 setInterval(nextSlide, 10000);
