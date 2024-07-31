@@ -99,7 +99,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("/styles/pellenc.png");
+  background-image: url("/assets/illustrations/backgroundStandBlackWhite.png");
   background-size: cover;
   background-position: center;
 }
@@ -510,6 +510,8 @@ html {
   font-size: clamp(20px, 1.3vw, 40px);
 }
 .bulles p {
+  font-family: "TT Chocolade";
+  font-weight: bold;
   font-size: clamp(16px, 1vw, 20px);
   text-align: center;
   padding-inline: 0.3rem;
