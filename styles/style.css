@@ -510,7 +510,6 @@ html {
   font-size: clamp(20px, 1.3vw, 40px);
 }
 .bulles p {
-  font-weight: bold;
   font-family: "TT Chocolade";
   font-size: clamp(16px, 1vw, 20px);
   text-align: center;
