@@ -1042,6 +1042,20 @@ html {
             width: 100%;
           }
 
+        .consent {
+            margin-bottom: 1.6rem;
+        }
+
+        a {
+            text-decoration: underline;
+            color: $pink;
+            font-size: 16px;
+        }
+        
+        label {
+            font-size: clamp(16px,.8vw,25px);
+        }
+
         button {
             margin: auto;
             background-color: $pink;
@@ -1062,7 +1076,7 @@ html {
     }
 }
 
-.mentions-legales {
+.mentions-legales, .politique-confidentialite {
     padding: 4vw;
 
     a {
@@ -1073,6 +1087,12 @@ html {
     h2 {
         font-size: clamp(20px,2vw,40px);
         margin-top: 2vw;
+        margin-bottom: 1vw;
+    }
+
+    h3 {
+        font-size: clamp(20px,1.5vw,40px);
+        margin-block: 1vw;
     }
 
     p {

@@ -869,6 +869,17 @@ html {
   color: #984E52;
   width: 100%;
 }
+.contact .right .consent {
+  margin-bottom: 1.6rem;
+}
+.contact .right a {
+  text-decoration: underline;
+  color: #CC7173;
+  font-size: 16px;
+}
+.contact .right label {
+  font-size: clamp(16px, 0.8vw, 25px);
+}
 .contact .right button {
   margin: auto;
   background-color: #CC7173;
@@ -886,18 +897,23 @@ html {
   cursor: pointer;
 }
 
-.mentions-legales {
+.mentions-legales, .politique-confidentialite {
   padding: 4vw;
 }
-.mentions-legales a {
+.mentions-legales a, .politique-confidentialite a {
   color: #984E52;
   text-decoration: underline;
 }
-.mentions-legales h2 {
+.mentions-legales h2, .politique-confidentialite h2 {
   font-size: clamp(20px, 2vw, 40px);
   margin-top: 2vw;
+  margin-bottom: 1vw;
 }
-.mentions-legales p {
+.mentions-legales h3, .politique-confidentialite h3 {
+  font-size: clamp(20px, 1.5vw, 40px);
+  margin-block: 1vw;
+}
+.mentions-legales p, .politique-confidentialite p {
   font-size: clamp(16px, 1vw, 30px);
   padding: max(0.5vw, 0.5rem);
 }
