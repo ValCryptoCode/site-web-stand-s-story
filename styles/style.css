@@ -270,7 +270,7 @@ footer .foot-bot {
   padding: 1.5vmin 5vw;
   background: linear-gradient(90deg, rgb(204, 113, 115) 0%, rgb(247, 235, 232) 50%);
 }
-.titre-section h3 {
+.titre-section h1 {
   display: inline;
   font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
