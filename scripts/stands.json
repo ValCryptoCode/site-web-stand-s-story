@@ -1,0 +1,187 @@
+[
+    {
+        "stand" : "PELLENC ST",
+        "salon" : "POLLUTEC",
+        "localisation" : "Lyon Eurexpo",
+        "date" : "2023",
+        "surface" : "136",
+        "photos" : {
+            "présentation" : "/assets/stands/pellenc.jpg",
+            "autre" : [
+                "/assets/stands/pellenc1.jpg",
+                "/assets/stands/pellenc2.jpg",
+                "/assets/stands/pellenc3.jpg",
+                "/assets/stands/pellenc4.jpg"
+            ]
+        }
+    },
+
+    {
+        "stand" : "COLAERT",
+        "salon" : "AGRIBEX",
+        "localisation" : "Bruxelles",
+        "date" : "2023",
+        "surface" : "80",
+        "photos" : {
+            "présentation" : "/assets/stands/Colaert/colaert.jpg",
+            "autre" : [
+                "/assets/stands/Colaert/colaert1.jpg",
+                "/assets/stands/Colaert/colaert2.jpg"
+            ]
+        }
+    },
+
+    {
+        "stand" : "JALLATTE",
+        "salon" : "PREVENTICA",
+        "localisation" : "Strasbourg",
+        "date" : "2024",
+        "surface" : "42",
+        "photos" : {
+            "présentation" : "/assets/stands/Jallatte/jallatte.jpg",
+            "autre" : [
+                "/assets/stands/Jallatte/jallatte1.jpg",
+                "/assets/stands/Jallatte/jallatte2.jpg",
+                "/assets/stands/Jallatte/jallatte3.jpg",
+                "/assets/stands/Jallatte/jallatte4.jpg",
+                "/assets/stands/Jallatte/jallatte5.jpg",
+                "/assets/stands/Jallatte/jallatt6.jpg"
+            ]
+        }
+    },
+
+    {
+        "stand" : "JALLATTE",
+        "salon" : "PREVENTICA",
+        "localisation" : "Toulouse",
+        "date" : "2023",
+        "surface" : "42",
+        "photos" : {
+            "présentation" : "/assets/stands/jallatte.jpg",
+            "autre" : [
+                "/assets/stands/jallatte1.jpg",
+                "/assets/stands/jallatte2.jpg",
+                "/assets/stands/jallatte3.jpg"
+            ]
+        }
+    },
+
+    {
+        "stand" : "U-POWER",
+        "salon" : "PREVENTICA",
+        "localisation" : "Strasbourg",
+        "date" : "2024",
+        "surface" : "42",
+        "photos" : {
+            "présentation" : "/assets/stands/UPower/upower.jpg",
+            "autre" : [
+                "/assets/stands/UPower/upower1.jpg",
+                "/assets/stands/UPower/upower2.jpg",
+                "/assets/stands/UPower/upower3.jpg",
+                "/assets/stands/UPower/upower4.jpg",
+                "/assets/stands/UPower/upower5.jpg",
+                "/assets/stands/UPower/upower6.jpg",
+                "/assets/stands/UPower/upower7.jpg",
+                "/assets/stands/UPower/upower8.jpg"
+            ]
+        }
+    },
+
+    {
+        "stand" : "U-POWER",
+        "salon" : "PREVENTICA",
+        "localisation" : "Toulouse",
+        "date" : "2023",
+        "surface" : "36",
+        "photos" : {
+            "présentation" : "/assets/stands/upower.jpg",
+            "autre" : [
+                "/assets/stands/upower1.jpg",
+                "/assets/stands/upower2.jpg"
+            ]
+        }
+    },
+
+    {
+        "stand" : "JEEPER",
+        "salon" : "SIRHA",
+        "localisation" : "Lyon",
+        "date" : "2023",
+        "surface" : "36",
+        "photos" : {
+            "présentation" : "/assets/stands/jeeper.jpg",
+            "autre" : [
+                "/assets/stands/jeeper1.jpg",
+                "/assets/stands/jeeper2.jpg"
+            ]
+        }
+    }
+
+    {
+        "stand" : "KOKIRIKI",
+        "salon" : "SIAL",
+        "localisation" : "Paris",
+        "date" : "2023",
+        "surface" : "52",
+        "photos" : {
+            "présentation" : "/assets/stands/kokiriki.jpg",
+            "autre" : [
+                "/assets/stands/kokiriki1.jpg",
+                "/assets/stands/kokiriki2.jpg",
+                "/assets/stands/kokiriki3.jpg"
+            ]
+        }
+    },
+
+    {
+        "stand" : "LMA",
+        "salon" : "EXPO PROTECTION",
+        "localisation" : "Paris",
+        "date" : "2023",
+        "surface" : "72",
+        "photos" : {
+            "présentation" : "/assets/stands/lma.JPG",
+            "autre" : [
+                "/assets/stands/lma1.JPG",
+                "/assets/stands/lma2.JPG"
+            ]
+        }
+    },
+
+    {
+        "stand" : "SFE",
+        "salon" : "SIRHA",
+        "localisation" : "Lyon Eurexpo",
+        "date" : "2023",
+        "surface" : "107",
+        "photos" : {
+            "présentation" : "/assets/stands/sfe.jpg",
+            "autre" : [
+                "/assets/stands/sfe1.jpg",
+                "/assets/stands/sfe2.jpg",
+                "/assets/stands/sfe3.jpg",
+                "/assets/stands/sfe4.jpg",
+                "/assets/stands/sfe5.jpg",
+                "/assets/stands/sfe6.jpg",
+                "/assets/stands/sfe7.jpg",
+                "/assets/stands/sfe8.jpg"
+            ]
+        }
+    },
+
+    {
+        "stand" : "PELLENC SA",
+        "salon" : "SITEVI",
+        "localisation" : "Montpellier",
+        "date" : "2023",
+        "surface" : "932",
+        "photos" : {
+            "présentation" : "/assets/stands/PellencSA/pellenc.JPG",
+            "autre" : [
+                "/assets/stands/PellencSA/pellenc2.JPG",
+                "/assets/stands/PellencSA/pellenc3.JPG",
+                "/assets/stands/PellencSA/pellenc4.JPG"
+            ]
+        }
+    }
+]
