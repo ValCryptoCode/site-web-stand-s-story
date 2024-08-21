@@ -812,6 +812,25 @@ html {
   filter: drop-shadow(0 0px 10px #cc7173);
 }
 
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .contact {
   display: flex;
   justify-content: space-around;
