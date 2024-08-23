@@ -76,7 +76,10 @@ function showFullscreenGallerie(index) {
   document.body.appendChild(divFullscreenElement);
   let indexPhoto = 0;
 
+  // Bouton X
   btnExitElement.addEventListener('click', () => divFullscreenElement.remove());
+
+  // Bouton <
   btnPrevElement.addEventListener('click', () => {
     const fullscreenImage = document.querySelector('.fullscreen img');
     indexPhoto -= 1;
@@ -86,7 +89,8 @@ function showFullscreenGallerie(index) {
     console.log(indexPhoto);
     return indexPhoto;
   });
-  
+
+  // Bouton >
   btnNextElement.addEventListener('click', () => {
     const fullscreenImage = document.querySelector('.fullscreen img');
     indexPhoto += 1;
