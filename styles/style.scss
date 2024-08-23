@@ -784,7 +784,6 @@ html {
 // LISTE SOLUTIONS 
 
 .list-solutions {
-    display: none;
     padding-inline: 3vw;
 
     h1 {
@@ -983,6 +982,33 @@ html {
         max-width: 90%;
         max-height: 90%;
         object-fit: contain;
+    }
+
+    .close-btn, .nav-btn {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: $pink-light;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .close-btn {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .prev-btn {
+        left: 10px;
+    }
+    
+    .next-btn {
+        right: 10px;
+    }
+    
+    .nav-btn {
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -1254,16 +1280,6 @@ html {
 
     footer .foot-bot {
         flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .bubbles-section {
-        display: none;
-    }
-
-    .list-solutions {
-        display: block;
     }
 }
 

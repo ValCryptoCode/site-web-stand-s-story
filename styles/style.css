@@ -652,7 +652,6 @@ html {
 }
 
 .list-solutions {
-  display: none;
   padding-inline: 3vw;
 }
 .list-solutions h1 {
@@ -829,6 +828,28 @@ html {
   max-height: 90%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.fullscreen .close-btn, .fullscreen .nav-btn {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: #F7EBE8;
+  font-size: 24px;
+  cursor: pointer;
+}
+.fullscreen .close-btn {
+  top: 10px;
+  right: 10px;
+}
+.fullscreen .prev-btn {
+  left: 10px;
+}
+.fullscreen .next-btn {
+  right: 10px;
+}
+.fullscreen .nav-btn {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .contact {
@@ -1035,14 +1056,6 @@ html {
   }
   footer .foot-bot {
     flex-direction: column;
-  }
-}
-@media screen and (max-width: 750px) {
-  .bubbles-section {
-    display: none;
-  }
-  .list-solutions {
-    display: block;
   }
 }
 @media screen and (max-width: 1100px) {
