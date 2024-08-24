@@ -18,7 +18,7 @@ function updateUI() {
   console.log("Mise à jour de l'UI avec", stands.length, 'stands');
 }
 
-// Affichage des stands 
+// Fonction d'Affichage des stands 
 function showStands () {
     for (let i = 0; i < stands.length; i++) {
         // Création des éléments
