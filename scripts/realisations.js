@@ -8,6 +8,7 @@ async function initializeStands() {
     console.log('Données récupérées:', stands);
     updateUI();
     showStands();
+    sortBtn();
   } catch (error) {
     console.error('Erreur lors de la récupération des données:', error);
   }
@@ -23,6 +24,7 @@ function showStands () {
     for (let i = 0; i < stands.length; i++) {
         // Création des éléments
         const aStandElement = document.createElement('a');
+        aStandElement.setAttribute('surface', stands[i].surface);
         const imgStandElement = document.createElement('img');
         imgStandElement.src = stands[i].photos[0];
         const h3StandElement = document.createElement('h3');
@@ -56,17 +58,22 @@ function showFullscreenGallerie(index) {
   imgFullscreenElement.src = stands[index].photos[0];
 
   const btnExitElement = document.createElement('button');
-  btnExitElement.innerText = 'X';
   btnExitElement.classList.add('close-btn');
-
+  const iCloseElement = document.createElement('i');
+  iCloseElement.classList.add('fa-solid', 'fa-xmark');
+  btnExitElement.appendChild(iCloseElement);
 
   const btnPrevElement = document.createElement('button');
-  btnPrevElement.innerText = '<';
   btnPrevElement.classList.add('prev-btn', 'nav-btn');
+  const iArrowLeftElement = document.createElement('i');
+  iArrowLeftElement.classList.add('fa-solid', 'fa-angle-left');
+  btnPrevElement.appendChild(iArrowLeftElement);
 
   const btnNextElement = document.createElement('button');
-  btnNextElement.innerText = '>';
   btnNextElement.classList.add('next-btn', 'nav-btn');
+  const iArrowRightElement = document.createElement('i');
+  iArrowRightElement.classList.add('fa-solid', 'fa-angle-right');
+  btnNextElement.appendChild(iArrowRightElement);
 
   divFullscreenElement.appendChild(imgFullscreenElement);
   divFullscreenElement.appendChild(btnExitElement);
@@ -101,6 +108,38 @@ function showFullscreenGallerie(index) {
     return indexPhoto;
   });
 }
+
+// Bouton Sort
+function sortBtn() {
+  const buttons = document.querySelectorAll('.btn button');
+  const items = document.querySelectorAll('.gallerie a');
+
+  buttons.forEach(button => {
+      button.addEventListener('click', function() {
+          // Retire la classe 'selected' de tous les boutons
+          buttons.forEach(btn => btn.classList.remove('selected'));
+          // Ajouter la classe 'selected' au bouton cliqué
+          this.classList.add('selected');
+          
+          const filter = this.id;
+          items.forEach(item => {
+              const size = parseInt(item.getAttribute('surface'));
+
+              if (filter === 'sortAll') {
+                  item.style.display = 'block';
+              } else if (filter === 'sortSmall' && size < 50) {
+                  item.style.display = 'block';
+              } else if (filter === 'sortMedium' && size >= 50 && size <= 100) {
+                  item.style.display = 'block';
+              } else if (filter === 'sortLarge' && size > 100) {
+                  item.style.display = 'block';
+              } else {
+                  item.style.display = 'none';
+              }
+          });
+      });
+  });
+};
 
 // Appel initializeStands au chargement de la page
 document.addEventListener('DOMContentLoaded', initializeStands);
