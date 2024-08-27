@@ -351,6 +351,11 @@ footer{
     background: linear-gradient(-90deg, rgba(204,113,115,1) 0%, rgba(247,235,232,1) 50%);
 }
 
+.stop-scrolling {
+    width: 100%;
+    overflow: hidden;
+}
+
 
 // ----- PAGE ACCUEIL ----- //
 

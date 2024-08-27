@@ -280,6 +280,11 @@ footer .foot-bot {
   background: linear-gradient(-90deg, rgb(204, 113, 115) 0%, rgb(247, 235, 232) 50%);
 }
 
+.stop-scrolling {
+  width: 100%;
+  overflow: hidden;
+}
+
 .dix-ans {
   padding-block: min(20vh, 7rem);
   padding-inline: min(5vw, 5rem);

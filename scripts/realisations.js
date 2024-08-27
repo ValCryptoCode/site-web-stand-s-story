@@ -51,6 +51,10 @@ function showStands () {
 // Gestion de l'affichage de la gallerie
 function showFullscreenGallerie(index) {
 
+  // Disable scrolling
+  const body = document.querySelector('body');
+  body.classList.add('stop-scrolling');
+
   const divFullscreenElement = document.createElement('div');
   divFullscreenElement.classList.add('fullscreen');
 
@@ -84,7 +88,10 @@ function showFullscreenGallerie(index) {
   let indexPhoto = 0;
 
   // Bouton X
-  btnExitElement.addEventListener('click', () => divFullscreenElement.remove());
+  btnExitElement.addEventListener('click', () => {
+    divFullscreenElement.remove();
+    body.classList.remove('stop-scrolling');
+  });
 
   // Bouton <
   btnPrevElement.addEventListener('click', () => {
@@ -100,11 +107,11 @@ function showFullscreenGallerie(index) {
   // Bouton >
   btnNextElement.addEventListener('click', () => {
     const fullscreenImage = document.querySelector('.fullscreen img');
+
     indexPhoto += 1;
     if (indexPhoto < 0) indexPhoto = stands[index].photos.length - 1;
     if (indexPhoto > stands[index].photos.length - 1) indexPhoto = 0;
     fullscreenImage.src = stands[index].photos[indexPhoto];
-    console.log(indexPhoto);
     return indexPhoto;
   });
 }
