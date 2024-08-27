@@ -6,11 +6,11 @@
         "date" : "2023",
         "surface" : "136",
         "photos" : [
-            "/assets/stands/pellenc.jpg",
-            "/assets/stands/pellenc1.jpg",
-            "/assets/stands/pellenc2.jpg",
-            "/assets/stands/pellenc3.jpg",
-            "/assets/stands/pellenc4.jpg"
+            "assets/stands/pellencST-pollutec-2023/pellenc-pollutec-2023-0.jpg",
+            "assets/stands/pellencST-pollutec-2023/pellenc-pollutec-2023-1.jpg",
+            "assets/stands/pellencST-pollutec-2023/pellenc-pollutec-2023-2.jpg",
+            "assets/stands/pellencST-pollutec-2023/pellenc-pollutec-2023-3.jpg",
+            "assets/stands/pellencST-pollutec-2023/pellenc-pollutec-2023-4.jpg"
         ]
         
     },
@@ -22,9 +22,9 @@
         "date" : "2023",
         "surface" : "80",
         "photos" : [
-            "/assets/stands/Colaert/colaert.jpg",
-            "/assets/stands/Colaert/colaert1.jpg",
-            "/assets/stands/Colaert/colaert2.jpg"
+            "assets/stands/colaert-agribex-2023/colaert-agribex-2023-0.jpg",
+            "assets/stands/colaert-agribex-2023/colaert-agribex-2023-1.jpg",
+            "assets/stands/colaert-agribex-2023/colaert-agribex-2023-2.jpg"
         ]
     },
 
@@ -35,13 +35,13 @@
         "date" : "2024",
         "surface" : "42",
         "photos" : [
-            "/assets/stands/Jallatte/jallatte.jpg",
-            "/assets/stands/Jallatte/jallatte1.jpg",
-            "/assets/stands/Jallatte/jallatte2.jpg",
-            "/assets/stands/Jallatte/jallatte3.jpg",
-            "/assets/stands/Jallatte/jallatte4.jpg",
-            "/assets/stands/Jallatte/jallatte5.jpg",
-            "/assets/stands/Jallatte/jallatte6.jpg"
+            "assets/stands/jallatte-preventica-2024/jallatte-preventica-2024-0.jpg",
+            "assets/stands/jallatte-preventica-2024/jallatte-preventica-2024-1.jpg",
+            "assets/stands/jallatte-preventica-2024/jallatte-preventica-2024-2.jpg",
+            "assets/stands/jallatte-preventica-2024/jallatte-preventica-2024-3.jpg",
+            "assets/stands/jallatte-preventica-2024/jallatte-preventica-2024-4.jpg",
+            "assets/stands/jallatte-preventica-2024/jallatte-preventica-2024-5.jpg",
+            "assets/stands/jallatte-preventica-2024/jallatte-preventica-2024-6.jpg"
         ]
     },
 
@@ -52,10 +52,10 @@
         "date" : "2023",
         "surface" : "42",
         "photos" : [
-            "/assets/stands/jallatte.jpg",
-            "/assets/stands/jallatte1.jpg",
-            "/assets/stands/jallatte2.jpg",
-            "/assets/stands/jallatte3.jpg"
+            "assets/stands/jallatte-preventica-2023/jallatte-preventica-2023-0.jpg",
+            "assets/stands/jallatte-preventica-2023/jallatte-preventica-2023-1.jpg",
+            "assets/stands/jallatte-preventica-2023/jallatte-preventica-2023-2.jpg",
+            "assets/stands/jallatte-preventica-2023/jallatte-preventica-2023-3.jpg"
         ]
     },
 
@@ -66,15 +66,15 @@
         "date" : "2024",
         "surface" : "42",
         "photos" : [
-            "/assets/stands/UPower/upower.jpg",
-            "/assets/stands/UPower/upower1.jpg",
-            "/assets/stands/UPower/upower2.JPG",
-            "/assets/stands/UPower/upower3.JPG",
-            "/assets/stands/UPower/upower4.JPG",
-            "/assets/stands/UPower/upower5.JPG",
-            "/assets/stands/UPower/upower6.JPG",
-            "/assets/stands/UPower/upower7.JPG",
-            "/assets/stands/UPower/upower8.JPG"
+            "assets/stands/upower-preventica-2024/upower-preventica-2024-0.jpg",
+            "assets/stands/upower-preventica-2024/upower-preventica-2024-1.jpg",
+            "assets/stands/upower-preventica-2024/upower-preventica-2024-2.jpg",
+            "assets/stands/upower-preventica-2024/upower-preventica-2024-3.jpg",
+            "assets/stands/upower-preventica-2024/upower-preventica-2024-4.jpg",
+            "assets/stands/upower-preventica-2024/upower-preventica-2024-5.jpg",
+            "assets/stands/upower-preventica-2024/upower-preventica-2024-6.jpg",
+            "assets/stands/upower-preventica-2024/upower-preventica-2024-7.jpg",
+            "assets/stands/upower-preventica-2024/upower-preventica-2024-8.jpg"
         ]
     },
 
@@ -85,9 +85,9 @@
         "date" : "2023",
         "surface" : "36",
         "photos" : [
-            "/assets/stands/upower.jpg",
-            "/assets/stands/upower1.jpg",
-            "/assets/stands/upower2.jpg"
+            "assets/stands/upower-preventica-2023/upower-preventica-2023-0.jpg",
+            "assets/stands/upower-preventica-2023/upower-preventica-2023-1.jpg",
+            "assets/stands/upower-preventica-2023/upower-preventica-2023-2.jpg"
         ]
     },
 
@@ -98,9 +98,9 @@
         "date" : "2023",
         "surface" : "36",
         "photos" : [
-            "/assets/stands/jeeper.jpg",
-            "/assets/stands/jeeper1.jpg",
-            "/assets/stands/jeeper2.jpg"
+            "assets/stands/jeeper-sirha-2023/jeeper-sirha-2023-0.jpg",
+            "assets/stands/jeeper-sirha-2023/jeeper-sirha-2023-1.jpg",
+            "assets/stands/jeeper-sirha-2023/jeeper-sirha-2023-2.jpg"
         ]
     },
 
@@ -111,10 +111,10 @@
         "date" : "2023",
         "surface" : "52",
         "photos" : [
-            "/assets/stands/kokiriki.jpg",
-            "/assets/stands/kokiriki1.jpg",
-            "/assets/stands/kokiriki2.jpg",
-            "/assets/stands/kokiriki3.jpg"
+            "assets/stands/kokiriki-sial-2023/kokiriki-sial-2023-0.jpg",
+            "assets/stands/kokiriki-sial-2023/kokiriki-sial-2023-1.jpg",
+            "assets/stands/kokiriki-sial-2023/kokiriki-sial-2023-2.jpg",
+            "assets/stands/kokiriki-sial-2023/kokiriki-sial-2023-3.jpg"
         ]
     },
 
@@ -125,9 +125,9 @@
         "date" : "2023",
         "surface" : "72",
         "photos" : [
-            "/assets/stands/lma.JPG",
-            "/assets/stands/lma1.JPG",
-            "/assets/stands/lma2.JPG"
+            "assets/stands/lma-expoprotection-2023/lma-expoprotection-2023-0.jpg",
+            "assets/stands/lma-expoprotection-2023/lma-expoprotection-2023-1.jpg",
+            "assets/stands/lma-expoprotection-2023/lma-expoprotection-2023-2.jpg"
         ]
     },
 
@@ -138,15 +138,15 @@
         "date" : "2023",
         "surface" : "107",
         "photos" : [
-            "/assets/stands/sfe.jpg",
-            "/assets/stands/sfe1.jpg",
-            "/assets/stands/sfe2.jpg",
-            "/assets/stands/sfe3.jpg",
-            "/assets/stands/sfe4.jpg",
-            "/assets/stands/sfe5.jpg",
-            "/assets/stands/sfe6.jpg",
-            "/assets/stands/sfe7.jpg",
-            "/assets/stands/sfe8.jpg"
+            "assets/stands/sfe-sirha-2023/sfe-sirha-2023-0.jpg",
+            "assets/stands/sfe-sirha-2023/sfe-sirha-2023-1.jpg",
+            "assets/stands/sfe-sirha-2023/sfe-sirha-2023-2.jpg",
+            "assets/stands/sfe-sirha-2023/sfe-sirha-2023-3.jpg",
+            "assets/stands/sfe-sirha-2023/sfe-sirha-2023-4.jpg",
+            "assets/stands/sfe-sirha-2023/sfe-sirha-2023-5.jpg",
+            "assets/stands/sfe-sirha-2023/sfe-sirha-2023-6.jpg",
+            "assets/stands/sfe-sirha-2023/sfe-sirha-2023-7.jpg",
+            "assets/stands/sfe-sirha-2023/sfe-sirha-2023-8.jpg"
         ]
     },
 
@@ -157,10 +157,10 @@
         "date" : "2023",
         "surface" : "932",
         "photos" : [
-            "/assets/stands/PellencSA/pellenc.JPG",
-            "/assets/stands/PellencSA/pellenc2.JPG",
-            "/assets/stands/PellencSA/pellenc3.JPG",
-            "/assets/stands/PellencSA/pellenc4.JPG"
+            "assets/stands/pellencSA-sitevi-2023/pellencSA-sitevi-2023-0.jpg",
+            "assets/stands/pellencSA-sitevi-2023/pellencSA-sitevi-2023-1.jpg",
+            "assets/stands/pellencSA-sitevi-2023/pellencSA-sitevi-2023-2.jpg",
+            "assets/stands/pellencSA-sitevi-2023/pellencSA-sitevi-2023-3.jpg"
         ]
     }
 ]

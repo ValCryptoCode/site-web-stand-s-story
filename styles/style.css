@@ -517,7 +517,7 @@ html {
   margin: 10vh auto;
   border-radius: 20px;
   box-shadow: 0 0px 2rem #cc7173;
-  background-image: url(/assets/stands/vue3D.jpg);
+  background-image: url(/assets//illustrations/vue3D.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -527,7 +527,7 @@ html {
 }
 
 .alternate {
-  background-image: url(/assets/stands/final-render.jpg);
+  background-image: url(/assets/illustrations/final-render.jpg);
 }
 
 .slider-button {
