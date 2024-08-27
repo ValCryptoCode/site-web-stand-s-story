@@ -494,7 +494,7 @@ html {
   padding-inline: 3vw;
 }
 .list-solutions h1 {
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.3vw, 1.5rem);
   display: inline-block;
   color: #F7EBE8;
   background-color: #984E52;
@@ -503,7 +503,7 @@ html {
   margin-block: 2em 1em;
 }
 .list-solutions li {
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
   padding: 0.5em 1em;
 }
 .list-solutions i {
