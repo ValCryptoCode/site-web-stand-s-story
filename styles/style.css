@@ -24,16 +24,6 @@
   font-family: "Coco Gothic Bold Italic";
   src: url("/fonts/CocoGothic-BoldItalic_trial.ttf") format("truetype");
 }
-@font-face {
-  font-family: "TT Chocolade";
-  src: url("/fonts/TT Chocolates Trial Regular.otf") format("truetype");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "TT Chocolade";
-  src: url("/fonts/TT Chocolates Trial Bold.otf") format("truetype");
-  font-weight: bold;
-}
 * {
   font-family: "Caviar Dreams", sans-serif;
   margin: 0;
@@ -86,7 +76,7 @@ nav, footer, nav a, footer a {
 }
 
 strong {
-  font-family: "TT Chocolade";
+  font-family: "Caviar Dreams";
   color: #984E52;
 }
 
@@ -312,7 +302,7 @@ footer .foot-bot {
   color: #984E52;
   font-size: clamp(1.2rem, 1.5vw, 1.5rem);
   text-align: justify;
-  font-family: "TT Chocolade";
+  font-family: "Caviar Dreams";
   padding-block: min(3vh, 3rem);
 }
 
@@ -345,7 +335,7 @@ footer .foot-bot {
 }
 
 .liste-salons b {
-  font-family: "TT Chocolade";
+  font-family: "Caviar Dreams";
 }
 .liste-salons h3 {
   display: inline-block;
@@ -357,7 +347,7 @@ footer .foot-bot {
   margin-bottom: 2rem;
 }
 .liste-salons li {
-  font-family: "TT Chocolade";
+  font-family: "Caviar Dreams";
   font-size: clamp(14px, 1.2vw, 30px);
   padding-block: 0.5vw;
 }

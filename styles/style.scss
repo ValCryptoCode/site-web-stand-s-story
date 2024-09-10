@@ -32,18 +32,6 @@
     src: url('/fonts/CocoGothic-BoldItalic_trial.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'TT Chocolade';
-    src: url('/fonts/TT\ Chocolates\ Trial\ Regular.otf') format('truetype');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'TT Chocolade';
-    src: url('/fonts/TT\ Chocolates\ Trial\ Bold.otf') format('truetype');
-    font-weight: bold;
-}
-
 
 // ----- FONT-SIZE ----- //
 
@@ -117,7 +105,7 @@ nav, footer, nav a, footer a {
 }
 
 strong {
-    font-family: 'TT Chocolade';
+    font-family: 'Caviar Dreams';
     color: #984E52;
 }
 
@@ -385,7 +373,7 @@ footer{
             color: $pink-dark;
             font-size: clamp($--fs-medium,1.5vw, $--fs-large);
             text-align: justify;
-            font-family: 'TT Chocolade';
+            font-family: 'Caviar Dreams';
             padding-block: min(3vh,3rem);
         }
     }
@@ -422,7 +410,7 @@ footer{
 .liste-salons {
 
     b {
-        font-family: 'TT Chocolade';
+        font-family: 'Caviar Dreams';
     }
 
     h3 {
@@ -437,7 +425,7 @@ footer{
     }
 
     li {        
-        font-family: 'TT Chocolade';
+        font-family: 'Caviar Dreams';
         font-size: clamp(14px,1.2vw, 30px);
         padding-block: .5vw;
     }
