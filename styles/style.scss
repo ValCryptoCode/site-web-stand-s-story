@@ -18,18 +18,15 @@
 }
 
 @font-face {
-    font-family: 'Brittany Signature';
-    src: url('/fonts/BrittanySignature.ttf') format('truetype');
+    font-family: 'Roboto Bold';
+    src: url('/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Blacker Sans';
-    src: url('/fonts/Blacker-Sans-Extrabold-trial.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Coco Gothic Bold Italic';
-    src: url('/fonts/CocoGothic-BoldItalic_trial.ttf') format('truetype');
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
 }
 
 
@@ -97,7 +94,8 @@ nav, footer, nav a, footer a {
 }
 
 .coco-bold-italic {
-    font-family: 'Coco Gothic Bold Italic';
+    font-family: 'Roboto Bold';
+    font-style: italic;
 }
 
 .degrade-txt-pink {
@@ -141,7 +139,8 @@ header {
         }
 
         h1 {
-            font-family: 'Blacker Sans';
+            font-family: 'Roboto';
+            font-weight: bold;
             font-size: clamp($--fs-large, 1.5vw, $--fs-extralarge);
             text-align: center;
 
