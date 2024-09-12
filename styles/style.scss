@@ -329,7 +329,7 @@ footer{
 
     h1 {
         display: inline;
-        font-size: clamp($--fs-medium, 1.5vw, $--fs-large);
+        font-size: max($--fs-medium, 1.5vw);
     }
 }
 
