@@ -12,7 +12,6 @@
             "assets/stands/pellencST-pollutec-2023/pellenc-pollutec-2023-3.jpg",
             "assets/stands/pellencST-pollutec-2023/pellenc-pollutec-2023-4.jpg"
         ]
-        
     },
 
     {
@@ -60,6 +59,19 @@
     },
 
     {
+        "stand" : "JALLATTE",
+        "salon" : "BATIMAT",
+        "localisation" : "Paris",
+        "date" : "2024",
+        "surface" : "54",
+        "photos" : [
+            "assets/stands/jallatte-batimat-2024/jallatte-batimat-2024-0.jpg",
+            "assets/stands/jallatte-batimat-2024/jallatte-batimat-2024-1.jpg",
+            "assets/stands/jallatte-batimat-2024/jallatte-batimat-2024-2.jpg"
+        ]
+    },
+
+    {
         "stand" : "U-POWER",
         "salon" : "PREVENTICA",
         "localisation" : "Strasbourg",
@@ -90,6 +102,49 @@
             "assets/stands/upower-preventica-2023/upower-preventica-2023-2.jpg"
         ]
     },
+
+    {
+        "stand" : "U-POWER",
+        "salon" : "BATIMAT",
+        "localisation" : "Paris",
+        "date" : "2024",
+        "surface" : "54",
+        "photos" : [
+            "assets/stands/upower-batimat-2024/upower-batimat-2024-0.jpg",
+            "assets/stands/upower-batimat-2024/upower-batimat-2024-1.jpg",
+            "assets/stands/upower-batimat-2024/upower-batimat-2024-2.jpg",
+            "assets/stands/upower-batimat-2024/upower-batimat-2024-3.jpg"
+        ]
+    },
+
+    {
+        "stand" : "NESTA",
+        "salon" : "BATIMAT",
+        "localisation" : "Paris",
+        "date" : "2024",
+        "surface" : "99",
+        "photos" : [
+            "assets/stands/nesta-batimat-2024/nesta-batimat-2024-0.jpg",
+            "assets/stands/nesta-batimat-2024/nesta-batimat-2024-1.jpg",
+            "assets/stands/nesta-batimat-2024/nesta-batimat-2024-2.jpg"
+        ]
+    },
+
+    {
+        "stand" : "BHARLEV",
+        "salon" : "SIRHA",
+        "localisation" : "Lyon",
+        "date" : "2023",
+        "surface" : "36",
+        "photos" : [
+            "assets/stands/bharlev-sirha-2023/bharlev-sirha-2023-0.jpg",
+            "assets/stands/bharlev-sirha-2023/bharlev-sirha-2023-1.jpg",
+            "assets/stands/bharlev-sirha-2023/bharlev-sirha-2023-2.jpg",
+            "assets/stands/bharlev-sirha-2023/bharlev-sirha-2023-3.jpg",
+            "assets/stands/bharlev-sirha-2023/bharlev-sirha-2023-4.jpg"
+        ]
+    },
+
 
     {
         "stand" : "JEEPER",
