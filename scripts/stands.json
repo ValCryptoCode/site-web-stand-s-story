@@ -28,6 +28,22 @@
     },
 
     {
+        "stand" : "COMTES DE PROVENCE",
+        "salon" : "SIAL",
+        "localisation" : "Paris",
+        "date" : "2024",
+        "surface" : "32",
+        "photos" : [
+            "assets/stands/comtesdeprovence-sial-2024/comtesdeprovence-sial-2024-0.jpg",
+            "assets/stands/comtesdeprovence-sial-2024/comtesdeprovence-sial-2024-1.jpg",
+            "assets/stands/comtesdeprovence-sial-2024/comtesdeprovence-sial-2024-2.jpg",
+            "assets/stands/comtesdeprovence-sial-2024/comtesdeprovence-sial-2024-3.jpg",
+            "assets/stands/comtesdeprovence-sial-2024/comtesdeprovence-sial-2024-4.jpg",
+            "assets/stands/comtesdeprovence-sial-2024/comtesdeprovence-sial-2024-5.jpg"
+        ]
+    },
+
+    {
         "stand" : "JALLATTE",
         "salon" : "PREVENTICA",
         "localisation" : "Strasbourg",
@@ -68,6 +84,22 @@
             "assets/stands/jallatte-batimat-2024/jallatte-batimat-2024-0.jpg",
             "assets/stands/jallatte-batimat-2024/jallatte-batimat-2024-1.jpg",
             "assets/stands/jallatte-batimat-2024/jallatte-batimat-2024-2.jpg"
+        ]
+    },
+
+    {
+        "stand" : "JALLATTE",
+        "salon" : "PREVENTICA",
+        "localisation" : "Lyon",
+        "date" : "2024",
+        "surface" : "42",
+        "photos" : [
+            "assets/stands/jallatte-preventica2-2024/jallatte-preventica2-2024-0.jpg",
+            "assets/stands/jallatte-preventica2-2024/jallatte-preventica2-2024-1.jpg",
+            "assets/stands/jallatte-preventica2-2024/jallatte-preventica2-2024-2.jpg",
+            "assets/stands/jallatte-preventica2-2024/jallatte-preventica2-2024-3.jpg",
+            "assets/stands/jallatte-preventica2-2024/jallatte-preventica2-2024-4.jpg",
+            "assets/stands/jallatte-preventica2-2024/jallatte-preventica2-2024-5.jpg"
         ]
     },
 
@@ -114,6 +146,23 @@
             "assets/stands/upower-batimat-2024/upower-batimat-2024-1.jpg",
             "assets/stands/upower-batimat-2024/upower-batimat-2024-2.jpg",
             "assets/stands/upower-batimat-2024/upower-batimat-2024-3.jpg"
+        ]
+    },
+
+    {
+        "stand" : "U-POWER",
+        "salon" : "PREVENTICA",
+        "localisation" : "Lyon",
+        "date" : "2024",
+        "surface" : "42",
+        "photos" : [
+            "assets/stands/upower-preventica2-2024/upower-preventica2-2024-0.jpg",
+            "assets/stands/upower-preventica2-2024/upower-preventica2-2024-1.jpg",
+            "assets/stands/upower-preventica2-2024/upower-preventica2-2024-2.jpg",
+            "assets/stands/upower-preventica2-2024/upower-preventica2-2024-3.jpg",
+            "assets/stands/upower-preventica2-2024/upower-preventica2-2024-4.jpg",
+            "assets/stands/upower-preventica2-2024/upower-preventica2-2024-5.jpg",
+            "assets/stands/upower-preventica2-2024/upower-preventica2-2024-6.jpg"
         ]
     },
 
@@ -170,6 +219,23 @@
             "assets/stands/kokiriki-sial-2023/kokiriki-sial-2023-1.jpg",
             "assets/stands/kokiriki-sial-2023/kokiriki-sial-2023-2.jpg",
             "assets/stands/kokiriki-sial-2023/kokiriki-sial-2023-3.jpg"
+        ]
+    },
+
+    {
+        "stand" : "KOKIRIKI",
+        "salon" : "SIAL",
+        "localisation" : "Paris",
+        "date" : "2023",
+        "surface" : "48",
+        "photos" : [
+            "assets/stands/kokiriki-sial-2024/kokiriki-sial-2024-0.jpg",
+            "assets/stands/kokiriki-sial-2024/kokiriki-sial-2024-1.jpg",
+            "assets/stands/kokiriki-sial-2024/kokiriki-sial-2024-2.jpg",
+            "assets/stands/kokiriki-sial-2024/kokiriki-sial-2024-3.jpg",
+            "assets/stands/kokiriki-sial-2024/kokiriki-sial-2024-4.jpg",
+            "assets/stands/kokiriki-sial-2024/kokiriki-sial-2024-5.jpg",
+            "assets/stands/kokiriki-sial-2024/kokiriki-sial-2024-6.jpg"
         ]
     },
 
